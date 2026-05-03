@@ -1,5 +1,6 @@
 ---
 title: "Layered Daily Notes"
+description: Build a Daily → Monthly → Yearly note hierarchy using typed links, Date Notes, and transitive implied relations.
 ---
 This guide will show you how to create a layered hierarchy of Daily, Monthly, and Yearly Notes. The end result will allow you to quickly move through your Daily Notes, and see them in the context of the month and year they belong to.
 

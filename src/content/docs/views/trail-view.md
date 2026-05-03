@@ -1,5 +1,6 @@
 ---
 title: "Trail View"
+description: Page view that shows all upward paths from the current note as a breadcrumb trail or grid at the top of the note.
 ---
 The Trail View shows all paths going _up_ from the current note. In this example, we see a binary tree going up two levels from the current note. The [Mermaid graph](../codeblocks/) below visualises the same data:
 

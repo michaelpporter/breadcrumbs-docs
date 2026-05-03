@@ -1,5 +1,6 @@
 ---
 title: "Announcement 2026-05-01"
+description: Major documentation update adding six new guides and expanding the Concepts, Views, and Edge Builders reference pages.
 ---
 ## Breadcrumbs Docs 🍞
 

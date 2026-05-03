@@ -1,5 +1,6 @@
 ---
 title: "Previous-Next View"
+description: Page view that displays the immediate previous and next neighbours of the current note for sequential navigation.
 ---
 The Previous-Next View shows the immediate `previous` and `next` neighbours of the current note.
 

@@ -1,5 +1,6 @@
 ---
 title: "Announcement 2024-04-06"
+description: V4 beta update adding the field suggester, BC metadata auto-complete, ignore fields, and Mermaid codeblocks.
 ---
 🍞 **Breadcrumbs** updates, in reverse-chronological order:
 

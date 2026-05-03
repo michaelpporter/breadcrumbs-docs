@@ -1,5 +1,6 @@
 ---
 title: "Zettelkasten Concept Hierarchy"
+description: Build self-maintaining MOC notes that auto-populate from tags, render live concept trees, and generate static tables of contents.
 ---
 This guide will show you how to build a self-maintaining concept hierarchy for a Zettelkasten vault. The end result is a set of Map of Content (MOC) notes that automatically gather every note tagged with a given concept, render a live collapsible tree of all their children, and can produce a static table of contents on demand — all with zero manual linking.
 

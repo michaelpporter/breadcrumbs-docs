@@ -1,5 +1,6 @@
 ---
 title: "Rebuild Graph"
+description: Command that reprocesses all vault notes to refresh the Breadcrumbs graph after making changes.
 ---
 This command rebuilds the [Breadcrumbs graph](/concepts/#graph). This is useful if you've made changes to your notes, and want to see them reflected in the graph.
 

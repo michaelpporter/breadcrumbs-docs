@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: Reference for the public Breadcrumbs API that other plugins can use to read graph data and trigger rebuilds.
 ---
 
 Breadcrumbs exposes a public API for other plugins to use. Access it via the `window` object:

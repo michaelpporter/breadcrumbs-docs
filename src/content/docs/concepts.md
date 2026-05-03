@@ -2,6 +2,7 @@
 aliases:
   - Reference
 title: Concepts
+description: Definitions of core Breadcrumbs concepts including graphs, edges, fields, traversal, and implied relations.
 ---
 
 This page defines various concepts used across Breadcrumbs

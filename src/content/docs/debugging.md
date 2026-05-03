@@ -1,5 +1,6 @@
 ---
 title: "Debugging"
+description: How to use Breadcrumbs log levels and interpret edge-build errors to diagnose graph problems.
 ---
 ## Log Levels
 

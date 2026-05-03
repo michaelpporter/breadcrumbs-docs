@@ -1,5 +1,6 @@
 ---
 title: "Getting Started with Hierarchies"
+description: Create your first Breadcrumbs hierarchy from scratch — add typed links, rebuild the graph, and explore the result in the Matrix and Trail views.
 ---
 Breadcrumbs is built around a simple idea: links between notes can have a _type_. That type is called an [edge field](/edge-fields/), and it's what turns a flat web of connections into a navigable hierarchy. This guide walks you through creating your first hierarchy from scratch — from understanding the default fields, to adding your first typed link, to seeing the result in the [Matrix View](/views/matrix-view/) and [Trail View](/views/trail-view/).
 

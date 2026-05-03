@@ -1,6 +1,7 @@
 ---
 BC-folder-note-field: down
 title: Views
+description: Overview of the Breadcrumbs views that visualise your graph, including Tree, Matrix, Codeblocks, and Page Views.
 ---
 
 Once you've built the graph, you can view it in various ways:

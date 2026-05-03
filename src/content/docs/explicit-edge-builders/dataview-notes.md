@@ -1,5 +1,6 @@
 ---
 title: "Dataview Notes"
+description: Edge builder that uses a Dataview query in frontmatter to automatically add edges to all matching notes.
 ---
 _Dataview Notes_ allow you to use the [Dataview plugin](https://github.com/blacksmithgu/obsidian-dataview) query engine to add edges to the graph. You can turn a note into a Dataview Note by adding the following to your frontmatter:
 

@@ -3,6 +3,7 @@ aliases:
   - edge fields
   - field
 title: Edge Fields
+description: How to define and use typed edge fields to add directional relationships between notes in Breadcrumbs.
 ---
 
 The starting point of Breadcrumbs is _fields_, which let you add _types_ to your links. For example, the `[[Father]]` note could have a `child` field pointing to `[[Me]]`, and `[[Me]]` could have a `parent` field pointing to `[[Mother]]`:

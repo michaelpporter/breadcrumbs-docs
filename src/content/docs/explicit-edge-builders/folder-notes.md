@@ -1,5 +1,6 @@
 ---
 title: "Folder Notes"
+description: Edge builder that adds edges from a designated folder note to all other notes in the same folder.
 ---
 _Folder Notes_ allow you to leverage your existing folder structure. You can turn a note into a folder note by adding the following to your frontmatter:
 

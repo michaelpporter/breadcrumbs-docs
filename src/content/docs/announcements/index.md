@@ -1,5 +1,6 @@
 ---
 title: "Announcements"
+description: Index of Breadcrumbs release announcements and changelog entries from the Discord community.
 ---
 ## Announcements
 

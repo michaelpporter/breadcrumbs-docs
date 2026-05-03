@@ -1,5 +1,6 @@
 ---
 title: "Vault Maintenance and Graph Auditing"
+description: Audit and maintain your Breadcrumbs graph by reading stats, distinguishing explicit from implied edges, and freezing inferred links to files.
 ---
 As your vault grows, so does your Breadcrumbs graph — and it can become difficult to know exactly what Breadcrumbs is inferring versus what you actually wrote. This guide walks through a set of practical maintenance habits: reading the graph's statistics to understand its shape, auditing which edges are explicit versus implied, making implied edges permanent when you need to, and using CSS to make the distinction visible at a glance.
 

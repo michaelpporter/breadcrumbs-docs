@@ -1,5 +1,6 @@
 ---
 title: "Edge Field Suggester"
+description: Auto-completion suggester that lets you quickly insert a Dataview typed-link using a configurable trigger string.
 ---
 The Edge Field Suggester lets you quickly add a new [typed-link](/explicit-edge-builders/typed-links/). It opens when you type the "_trigger string_" at the start of a line, it will then show you a list of all your [Edge Fields](/edge-fields/), and let you quickly select one.
 

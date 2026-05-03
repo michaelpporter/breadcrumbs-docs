@@ -1,6 +1,7 @@
 ---
 BC-folder-note-field: down
 title: Commands
+description: Overview of the command palette commands Breadcrumbs adds for navigating, building, and managing your graph.
 ---
 
 Breadcrumbs adds a few commands to the command palette.

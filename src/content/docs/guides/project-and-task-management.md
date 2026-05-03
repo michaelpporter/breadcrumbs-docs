@@ -1,5 +1,6 @@
 ---
 title: "Project and Task Management"
+description: Model a project management hierarchy from life areas to tasks, with dependency edges and live Mermaid diagrams.
 ---
 Breadcrumbs can model a full project-management hierarchy — from broad life areas down to individual tasks, with dependency edges running across the same level. The end result lets you trace any task back to the area it serves, see every project and task in a single Mermaid diagram, and run weekly reviews without leaving Obsidian.
 

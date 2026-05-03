@@ -1,5 +1,6 @@
 ---
 title: "Transitive Implied Relations"
+description: Rules that collapse a chain of edge fields into a single implied edge, enabling relationships like grandparent or sibling.
 ---
 This category of [Implied Edge Builders](/implied-edge-builders/) can be thought of as a _chain_ of fields which collapse down to one field.
 

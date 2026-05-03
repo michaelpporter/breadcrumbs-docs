@@ -1,5 +1,6 @@
 ---
 title: "List Notes"
+description: Edge builder that reads a note's nested bullet list to add parent-child and sibling edges between linked notes.
 ---
 _List Notes_ allow you to leverage your existing bullet list structure. You can turn a note into a List Note by adding the following to your frontmatter:
 

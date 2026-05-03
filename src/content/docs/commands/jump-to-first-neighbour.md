@@ -1,5 +1,6 @@
 ---
 title: "Jump to First Neighbour"
+description: Commands that open the first neighbour of the current note in a given field group, enabling rapid graph navigation.
 ---
 These commands let you quickly jump around your Breadcrumbs graph. For each of your [Field Groups](/field-groups/), there is a command to jump to the first neighbour in that field.
 

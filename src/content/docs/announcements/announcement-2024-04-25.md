@@ -1,5 +1,6 @@
 ---
 title: "Announcement 2024-04-25"
+description: Breaking changes replacing Hierarchies and Directions with Fields and Field Groups, plus YAML codeblock parsing.
 ---
 ## Breadcrumbs 🍞
 

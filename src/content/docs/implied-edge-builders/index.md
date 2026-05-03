@@ -2,6 +2,7 @@
 aliases:
   - implied
 title: Implied Edge Builders
+description: Rules that infer new graph edges from your existing explicit edges using transitive relationship chains.
 ---
 
 By [adding edges](/explicit-edge-builders/) to the Breadcrumbs graph, you've created various _explicit_ relationships: "Note A is the _parent_ of note B", or "note C has 3 _children_: D, E, and F". But this also _implies_ some relationships. For example, if `Father` is the _parent_ of `Daughter`, then it's _implied_ that `Daughter` is the **child** of `Father`!

@@ -3,6 +3,7 @@ BC-folder-note-field: down
 aliases:
   - explicit
 title: Explicit Edge Builders
+description: Overview of the edge builders that add explicit typed edges to the Breadcrumbs graph from your vault structure.
 ---
 
 The _edge builders_ add edges to the [Breadcrumbs graph](/concepts/#graph) using the various sources of structure that already exist in your notes/vault. Some are relatively manual, like [Typed Links](typed-links/), while others are more flexible and automated, like [Date Notes](date-notes/).

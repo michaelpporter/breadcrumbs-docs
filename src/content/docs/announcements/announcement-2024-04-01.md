@@ -1,5 +1,6 @@
 ---
 title: "Announcement 2024-04-01"
+description: V4 beta update covering advanced sorting, markdown link detection, Johnny Decimal support, and the Threading command.
 ---
 🍞 New **Breadcrumbs** things! Currently available in the V4 beta, via the BRAT plugin. In reverse chronological order:
 

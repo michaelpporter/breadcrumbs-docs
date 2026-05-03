@@ -1,5 +1,6 @@
 ---
 title: Academic Reading and Literature Notes
+description: Connect papers to authors, journals, and topic MOCs, and automatically derive author expertise from citation data.
 ---
 
 This guide will show you how to build a structured literature network from your academic reading notes. The end result connects papers to their authors, journals, and topic MOCs — and lets you generate per-author bibliographies automatically, infer an author's areas of expertise from the papers they wrote, and bake everything down to plain text before sharing or publishing your vault.

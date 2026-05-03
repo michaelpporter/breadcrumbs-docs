@@ -1,5 +1,6 @@
 ---
 title: "Page Views"
+description: In-note header views comprising the Trail View and Previous-Next View that show hierarchy and sequence context.
 ---
 The Page Views appear at the top of the current note. They comprise two subviews:
 

@@ -1,5 +1,6 @@
 ---
 title: "Reading the Mermaid Graph View"
+description: Decode the four Mermaid arrow styles — solid vs dashed and directed vs undirected — to understand explicit and implied edges at a glance.
 ---
 The [[Mermaid Codeblock]] view renders your Breadcrumbs graph as a flowchart, with every relationship between notes drawn as a connecting line. That line is not decoration — its style carries precise information. Every Mermaid arrow answers two questions simultaneously: was this edge written by a human, and does it run in one direction or both? The combination of these two answers produces one of four distinct styles.
 

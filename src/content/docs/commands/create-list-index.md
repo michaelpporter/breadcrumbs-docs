@@ -1,5 +1,6 @@
 ---
 title: "Create List Index"
+description: Command that builds a nested markdown list of all graph paths from the current note and copies it to the clipboard.
 ---
 This command builds a nested markdown list of all paths in a given direction from the current note. It then copies this list to the clipboard.
 

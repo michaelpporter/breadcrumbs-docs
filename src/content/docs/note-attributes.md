@@ -1,5 +1,6 @@
 ---
 title: "Note Attributes"
+description: Frontmatter fields that control whether Breadcrumbs adds incoming or outgoing edges to a specific note.
 ---
 The following metadata fields influence how Breadcrumbs adds edges to the graph. They can be added to the YAML frontmatter of a note, or as an inline Dataview field.
 

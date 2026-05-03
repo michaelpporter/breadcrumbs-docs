@@ -1,5 +1,6 @@
 ---
 title: "Field Groups"
+description: Named collections of edge fields that let you filter and group related fields for use in views and commands.
 ---
 _Field Groups_ are simply a convenience to work with multiple [edge fields](/edge-fields/) at once.
 

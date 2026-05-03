@@ -1,5 +1,6 @@
 ---
 title: "Personal Relationship Management"
+description: Build a personal CRM in Obsidian using typed links and transitive implied relations to automatically derive family and social connections.
 ---
 Similar to [Monica](https://github.com/monicahq/monica), Breadcrumbs can be used to manage personal relationships. Vanilla Obsidian can easily handle alot of the functionality of a personal CRM, but Breadcrumbs is particularly helpful when it comes to noting relationships between people, and inferring more complex relations from those.
 

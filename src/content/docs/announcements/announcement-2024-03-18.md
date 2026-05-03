@@ -1,5 +1,6 @@
 ---
 title: "Announcement 2024-03-18"
+description: Breadcrumbs V4 beta launch announcement, resolving long-standing issues and rewriting the plugin from scratch.
 ---
 Hi there, everyone 🙂
 

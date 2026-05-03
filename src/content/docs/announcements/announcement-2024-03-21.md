@@ -1,5 +1,6 @@
 ---
 title: "Announcement 2024-03-21"
+description: Introduces fully customisable transitive implied relationships that can chain fields across multiple hierarchies.
 ---
 🍞 **Breadcrumbs** has a powerful new feature: _custom_ implied relationships!
 

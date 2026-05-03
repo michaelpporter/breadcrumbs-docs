@@ -1,5 +1,6 @@
 ---
 title: "Contributing"
+description: Ways to contribute to Breadcrumbs, including filing issues, opening pull requests, and writing guides.
 ---
 If you'd like to contribute to Breadcrumbs, you can do so in a few ways:
 

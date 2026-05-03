@@ -1,5 +1,6 @@
 ---
 title: Course and Curriculum Builder
+description: Build a structured course in Obsidian with automatic hierarchy from note names, ordered lessons, and persistent next/previous navigation.
 history:
   - Course and Curriculum Builder
 ---

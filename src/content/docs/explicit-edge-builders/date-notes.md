@@ -1,5 +1,6 @@
 ---
 title: "Date Notes"
+description: Edge builder that links daily notes sequentially and builds a temporal hierarchy across weeks, months, quarters, and years.
 ---
 _Date Notes_ allow you to leverage your existing daily notes structure. You can enable Date Notes globally in the settings, under Date Notes. For example, Breadcrumbs can add edges from `2022-01-01` to `2022-01-02`, to `2022-01-03` using the [field](/edge-fields/) you specify.
 

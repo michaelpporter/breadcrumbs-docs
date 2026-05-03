@@ -1,5 +1,6 @@
 ---
 title: "Threading"
+description: Command that creates a new note and automatically adds a Breadcrumbs typed-link edge from the current note to it.
 ---
 This command creates a new note, and adds a Breadcrumbs edge to it from the current note. This is useful for quickly creating a new note in the context of the current note.
 
