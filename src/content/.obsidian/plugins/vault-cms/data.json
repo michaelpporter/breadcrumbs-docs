@@ -1,0 +1,462 @@
+{
+  "projectRoot": "../..",
+  "configFilePath": "../../astro.config.mjs",
+  "contentTypes": [
+    {
+      "id": "content-type-1777810631307-epufv98cg",
+      "name": "Announcements",
+      "folder": "Announcements",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777810631307-2z3mpcvja",
+      "name": "Commands",
+      "folder": "Commands",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1773432670507-xob1karx2",
+      "name": "Docs",
+      "folder": "docs",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777810631307-u9l07i7yn",
+      "name": "Explicit Edge Builders",
+      "folder": "Explicit Edge Builders",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777811111363-ahihawjnk",
+      "name": "Explicit-Edge-Builders",
+      "folder": "Explicit-Edge-Builders",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1773432715446-aa4ni0ahu",
+      "name": "Guides",
+      "folder": "docs/guides",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index",
+      "linkBasePath": "/docs/guides/"
+    },
+    {
+      "id": "content-type-1777810631307-cy8k8ik68",
+      "name": "Guides",
+      "folder": "Guides",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777810631307-koxqpqaw9",
+      "name": "Images",
+      "folder": "Images",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777810631307-h09hwnh5j",
+      "name": "Implied Edge Builders",
+      "folder": "Implied Edge Builders",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777811111363-rzgunwjwt",
+      "name": "Implied-Edge-Builders",
+      "folder": "Implied-Edge-Builders",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1773432726664-0vqrjh6zp",
+      "name": "Reference",
+      "folder": "docs/reference",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index",
+      "linkBasePath": "/docs/reference/"
+    },
+    {
+      "id": "content-type-1777810631307-jb9t6cshk",
+      "name": "Suggesters",
+      "folder": "Suggesters",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777810631307-hiplmzr1b",
+      "name": "Views",
+      "folder": "Views",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    }
+  ],
+  "frontmatterProperties": {
+    "content-type-1773432715446-aa4ni0ahu": {
+      "titleProperty": "title",
+      "descriptionProperty": "description",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
+    },
+    "content-type-1773432726664-0vqrjh6zp": {
+      "titleProperty": "title",
+      "descriptionProperty": "description",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
+    },
+    "content-type-1777810631307-epufv98cg": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    },
+    "content-type-1777810631307-2z3mpcvja": {
+      "hasDraftStatus": false,
+      "template": "---\nBC-folder-note-field: \"\"\n---\n"
+    },
+    "content-type-1777810631307-u9l07i7yn": {
+      "hasDraftStatus": false,
+      "template": "---\nBC-folder-note-field: \"\"\naliases: []\n---\n"
+    },
+    "content-type-1777810631307-cy8k8ik68": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    },
+    "content-type-1777810631307-h09hwnh5j": {
+      "hasDraftStatus": false,
+      "template": "---\naliases: []\n---\n"
+    },
+    "content-type-1777810631307-jb9t6cshk": {
+      "hasDraftStatus": false,
+      "template": "---\nBC-folder-note-field: \"\"\n---\n"
+    },
+    "content-type-1777810631307-hiplmzr1b": {
+      "hasDraftStatus": false,
+      "template": "---\nBC-folder-note-field: \"\"\n---\n"
+    },
+    "content-type-1777811111363-ahihawjnk": {
+      "hasDraftStatus": false,
+      "template": "---\nBC-folder-note-field: \"\"\naliases: []\n---\n"
+    },
+    "content-type-1777811111363-rzgunwjwt": {
+      "hasDraftStatus": false,
+      "template": "---\naliases: []\n---\n"
+    }
+  },
+  "attachmentHandlingMode": "subfolder",
+  "attachmentFolderName": "Images",
+  "preset": "vanilla",
+  "presetName": "",
+  "presetsRepo": "davidvkimball/vaultcms-presets",
+  "enableEditingToolbar": true,
+  "enableExtendedFileTypes": false,
+  "enabledPlugins": [
+    "astro-composer",
+    "bases-cms",
+    "editing-toolbar",
+    "home-base",
+    "image-manager",
+    "property-over-file-name",
+    "seo",
+    "ui-tweaker",
+    "data-files-editor",
+    "explorer-focus",
+    "file-name-history",
+    "settings-search",
+    "tag-wrangler",
+    "zenmode",
+    "omnisearch"
+  ],
+  "disabledPlugins": [],
+  "theme": "",
+  "basesCMSConfig": {
+    "views": []
+  },
+  "astroComposerConfig": {
+    "customContentTypes": [
+      {
+        "id": "content-type-1777810631307-epufv98cg",
+        "name": "Announcements",
+        "folder": "Announcements",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/Announcements/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777810631307-2z3mpcvja",
+        "name": "Commands",
+        "folder": "Commands",
+        "template": "---\nBC-folder-note-field: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/Commands/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777811111363-ahihawjnk",
+        "name": "Explicit-Edge-Builders",
+        "folder": "Explicit-Edge-Builders",
+        "template": "---\nBC-folder-note-field: \"\"\naliases: []\n---\n",
+        "enabled": true,
+        "linkBasePath": "/Explicit-Edge-Builders/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777810631307-cy8k8ik68",
+        "name": "Guides",
+        "folder": "Guides",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/Guides/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777811111363-rzgunwjwt",
+        "name": "Implied-Edge-Builders",
+        "folder": "Implied-Edge-Builders",
+        "template": "---\naliases: []\n---\n",
+        "enabled": true,
+        "linkBasePath": "/Implied-Edge-Builders/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1773432726664-0vqrjh6zp",
+        "name": "Reference",
+        "folder": "docs/reference",
+        "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/docs/reference/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777810631307-jb9t6cshk",
+        "name": "Suggesters",
+        "folder": "Suggesters",
+        "template": "---\nBC-folder-note-field: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/Suggesters/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
+        "id": "content-type-1777810631307-hiplmzr1b",
+        "name": "Views",
+        "folder": "Views",
+        "template": "---\nBC-folder-note-field: \"\"\n---\n",
+        "enabled": true,
+        "linkBasePath": "/Views/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      }
+    ],
+    "defaultTemplate": "",
+    "configFilePath": "../../astro.config.mjs",
+    "terminalProjectRootPath": "../..",
+    "showMdxFilesInExplorer": true
+  },
+  "seoConfig": {
+    "titleProperty": "title",
+    "scanDirectories": "Announcements,Commands,Explicit-Edge-Builders,Guides,Images,Implied-Edge-Builders,Suggesters,Views",
+    "useFilenameAsTitle": false,
+    "useFilenameAsSlug": true,
+    "enableMDXSupport": true
+  },
+  "propertyOverFileName": {
+    "propertyKey": "title",
+    "enableMdxSupport": true
+  },
+  "imageManager": {
+    "enableRenameOnPaste": true,
+    "enableRenameOnDrop": true,
+    "imageNameTemplate": "",
+    "attachmentLocation": "obsidian",
+    "customAttachmentPath": "./assets",
+    "defaultProvider": "unsplash",
+    "unsplashProxyServer": "",
+    "pexelsApiKey": "",
+    "pexelsApiKeySecretId": "",
+    "pixabayApiKey": "",
+    "pixabayApiKeySecretId": "",
+    "defaultOrientation": "any",
+    "defaultImageSize": "large",
+    "enablePropertyPaste": true,
+    "propertyLinkFormat": "obsidian",
+    "customPropertyLinkFormat": "{image-url}",
+    "defaultPropertyName": "banner",
+    "defaultIconPropertyName": "icon",
+    "altTextProperty": "",
+    "autoConvertRemoteImages": false,
+    "convertOnNoteOpen": false,
+    "convertOnNoteSave": false,
+    "processBackgroundChanges": true,
+    "showRenameDialog": true,
+    "autoRename": false,
+    "dupNumberDelimiter": "-",
+    "dupNumberAtStart": false,
+    "disableRenameNotice": false,
+    "enableDescriptiveImages": true,
+    "insertSize": "",
+    "insertReferral": true,
+    "insertBackLink": false,
+    "appendReferral": false,
+    "banner": {
+      "properties": {
+        "imageProperty": "banner",
+        "iconProperty": "icon"
+      },
+      "desktop": {
+        "enabled": true,
+        "height": 240,
+        "viewOffset": 0,
+        "noteOffset": -32,
+        "borderRadius": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "padding": 8,
+        "fade": true,
+        "iconEnabled": false,
+        "iconSize": 96,
+        "iconRadius": 8,
+        "iconBackground": true,
+        "iconBorder": 2,
+        "iconFrame": true,
+        "iconAlignmentH": "flex-start",
+        "iconAlignmentV": "flex-end",
+        "iconOffsetX": 0,
+        "iconOffsetY": -24
+      },
+      "tablet": {
+        "enabled": true,
+        "height": 190,
+        "viewOffset": 0,
+        "noteOffset": -32,
+        "borderRadius": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "padding": 8,
+        "fade": true,
+        "iconEnabled": false,
+        "iconSize": 96,
+        "iconRadius": 8,
+        "iconBackground": true,
+        "iconBorder": 2,
+        "iconFrame": true,
+        "iconAlignmentH": "flex-start",
+        "iconAlignmentV": "flex-end",
+        "iconOffsetX": 0,
+        "iconOffsetY": -24
+      },
+      "phone": {
+        "enabled": true,
+        "height": 160,
+        "viewOffset": 0,
+        "noteOffset": -32,
+        "borderRadius": [
+          8,
+          8,
+          8,
+          8
+        ],
+        "padding": 8,
+        "fade": true,
+        "iconEnabled": false,
+        "iconSize": 56,
+        "iconRadius": 8,
+        "iconBackground": true,
+        "iconBorder": 2,
+        "iconFrame": true,
+        "iconAlignmentH": "flex-start",
+        "iconAlignmentV": "flex-end",
+        "iconOffsetX": 0,
+        "iconOffsetY": -24
+      }
+    },
+    "supportedExtensions": [
+      "md",
+      "mdx"
+    ],
+    "debugMode": false
+  },
+  "homeBase": {
+    "homeBaseType": "File",
+    "homeBaseValue": "_bases/Home.base",
+    "openOnStartup": true,
+    "openViewMode": "default",
+    "openMode": "replace-all",
+    "manualOpenMode": "retain",
+    "replaceNewTab": false,
+    "newTabMode": "only-when-empty",
+    "openWhenAllTabsClosed": false,
+    "useDifferentFileForNewTab": false,
+    "newTabType": "File",
+    "newTabValue": "",
+    "newTabSeparateMobile": false,
+    "mobileNewTabType": "File",
+    "mobileNewTabValue": "",
+    "showStickyHomeIcon": true,
+    "stickyIconName": "home",
+    "hideHomeTabHeader": true,
+    "replaceMobileNewTab": false,
+    "separateMobile": false,
+    "mobileHomeBaseType": "File",
+    "mobileHomeBaseValue": "",
+    "commandOnOpen": "",
+    "waitForGitSync": false,
+    "gitSyncTimeout": 3,
+    "revertView": false,
+    "autoScroll": false,
+    "hideReleaseNotes": false,
+    "stickyIconReplaceTab": false
+  },
+  "explorerFocus": {
+    "showRightClickMenu": true,
+    "showFileExplorerIcon": true,
+    "focusLevel": "parent",
+    "hideAncestorFolders": false
+  },
+  "ignoreConfig": {
+    "gitIgnoreConfigured": true,
+    "viteIgnoreConfigured": false
+  },
+  "gitConfig": {
+    "enabled": true,
+    "isPrivate": false,
+    "branchName": "main",
+    "autoConfigureObsidianGit": true,
+    "repoName": "breadcrumbs-docs",
+    "repoDescription": "Breadcrumbs Documentation"
+  },
+  "deploymentPlatform": "",
+  "resolvePublicImages": false,
+  "runWizardOnStartup": false,
+  "wizardCompleted": true,
+  "enableMdxSupport": true
+}
