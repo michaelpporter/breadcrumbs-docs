@@ -1,7 +1,7 @@
 ---
 title: "Implied Relation Rounds"
 ---
-By default, each of your [Transitive Implied Relations](transitive-implied-relations/) runs once, meaning they only consider the [explicit](/explicit-edge-builders/) edges in the graph when deciding if the rule matches. But in some cases, you may want the implied rule to consider _other implied edges_, that's where **rounds** come in:
+By default, each of your [Transitive Implied Relations](../transitive-implied-relations/) runs once, meaning they only consider the [explicit](/explicit-edge-builders/) edges in the graph when deciding if the rule matches. But in some cases, you may want the implied rule to consider _other implied edges_, that's where **rounds** come in:
 
 - Setting rounds to `0` disables the rule.
 - Setting it to `1` will run the rule once, only considering _explicit_ edges.
@@ -20,7 +20,7 @@ flowchart LR
 	3(B) -- up --> 2
 ```
 
-If you have the [Parent's Child is Sibling](transitive-implied-relations/#parents-child-is-sibling) implied relation enabled, you may expect `A` and `B` to be marked as siblings, since they share the same parent. But in this example, they won't since there isn't a chain of `[up, down]` between the two. Instead, they both point `up`. To achieve the same effect, we can use the [opposite direction](transitive-implied-relations/#opposite-direction) implied relation to add the `down` edges we need:
+If you have the [Parent's Child is Sibling](../transitive-implied-relations/#parents-child-is-sibling) implied relation enabled, you may expect `A` and `B` to be marked as siblings, since they share the same parent. But in this example, they won't since there isn't a chain of `[up, down]` between the two. Instead, they both point `up`. To achieve the same effect, we can use the [opposite direction](../transitive-implied-relations/#opposite-direction) implied relation to add the `down` edges we need:
 
 ```mermaid
 flowchart LR

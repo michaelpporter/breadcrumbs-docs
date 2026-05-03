@@ -32,7 +32,7 @@ type?: (tree) | mermaid | markmap
 
 How to visualise the results.
 
-- `tree` is similar to the [Tree View](tree-view/)
+- `tree` is similar to the [Tree View](../tree-view/)
 - `mermaid` renders the results in a [Mermaid](https://mermaid.js.org) graph
 - `markmap` renders the results as an interactive [Markmap](https://markmap.js.org) mind map
 
