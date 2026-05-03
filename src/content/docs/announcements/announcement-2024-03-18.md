@@ -14,5 +14,3 @@ Thanks to everyone who has helped beta test so far 💚
 ---
 
 Message Link: [Discord](https://discord.com/channels/686053708261228577/855181471643861002/1219167702526988298)
-
-next:: [Announcement 2024-03-21](announcement-2024-03-21/)

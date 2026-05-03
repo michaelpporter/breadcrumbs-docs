@@ -12,5 +12,3 @@ Let me know if it all makes sense, give it a try, and please share any feedback 
 ---
 
 Message Link: [Discord](https://discord.com/channels/686053708261228577/855181471643861002/1220298808727044257)
-
-next:: [Announcement 2024-04-01](announcement-2024-04-01/)

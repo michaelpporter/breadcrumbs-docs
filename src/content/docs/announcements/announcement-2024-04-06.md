@@ -13,10 +13,8 @@ title: "Announcement 2024-04-06"
 
 These updates are currently only available in the V4 beta via the BRAT plugin. Let me know your thoughts, I'm always looking for feedback, especially as the beta gets closer to being stable! All changes are documented in the [README](https://github.com/SkepticMystic/breadcrumbs), if you've got any questions, please do ask in ⁠breadcrumbs. Thank you to everyone that helped suggest/test these changes 💚
 
-![Binary Tree Mermaid Diagram.png](/images/binary-tree-mermaid-diagram.png)
+![Binary Tree Mermaid Diagram.png](images/binary-tree-mermaid-diagram.png)
 
 ---
 
 Message Link: [Discord](https://discord.com/channels/686053708261228577/855181471643861002/1226248518578995230)
-
-next:: [Announcement 2024-04-25](announcement-2024-04-25/)

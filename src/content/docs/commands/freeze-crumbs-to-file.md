@@ -11,7 +11,7 @@ graph
 	1 -.->|down| 3(C)
 ```
 
-You can run the **Freeze implied edges to note** command to turn them into [explicit](/explicit-edge-builders/explicit-edge-builders/) [typed-links](/explicit-edge-builders/typed-links/):
+You can run the **Freeze implied edges to note** command to turn them into [explicit](/explicit-edge-builders/) [typed-links](/explicit-edge-builders/typed-links/):
 
 **Note.md**:
 

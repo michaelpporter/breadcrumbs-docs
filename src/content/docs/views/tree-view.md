@@ -3,7 +3,7 @@ title: "Tree View"
 ---
 The Tree View appears on the side of the editor, and shows all paths with a chosen [field group](/field-groups/), starting from the current note. By default, it shows all paths going `down`. This image shows paths going either `up` or `down`:
 
-![Tree View.png](/images/tree-view.png)
+![Tree View.png](images/tree-view.png)
 
 ## Settings
 

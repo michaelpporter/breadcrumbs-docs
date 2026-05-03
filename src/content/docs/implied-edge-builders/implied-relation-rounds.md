@@ -1,7 +1,7 @@
 ---
 title: "Implied Relation Rounds"
 ---
-By default, each of your [Transitive Implied Relations](transitive-implied-relations/) runs once, meaning they only consider the [explicit](/explicit-edge-builders/explicit-edge-builders/) edges in the graph when deciding if the rule matches. But in some cases, you may want the implied rule to consider _other implied edges_, that's where **rounds** come in:
+By default, each of your [Transitive Implied Relations](transitive-implied-relations/) runs once, meaning they only consider the [explicit](/explicit-edge-builders/) edges in the graph when deciding if the rule matches. But in some cases, you may want the implied rule to consider _other implied edges_, that's where **rounds** come in:
 
 - Setting rounds to `0` disables the rule.
 - Setting it to `1` will run the rule once, only considering _explicit_ edges.

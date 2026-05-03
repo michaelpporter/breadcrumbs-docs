@@ -20,7 +20,7 @@ The four styles come from two orthogonal properties. Understand the properties f
 
 ### 1. Solid vs Dashed — Provenance
 
-A **solid line** means at least one edge on that line was explicitly written — as a [typed link](/explicit-edge-builders/typed-links/) in frontmatter, a bullet in a [list note](/explicit-edge-builders/list-notes/), a folder structure in [Folder Notes](/explicit-edge-builders/folder-notes/), or any other [explicit edge builder](/explicit-edge-builders/explicit-edge-builders/). A human put it there.
+A **solid line** means at least one edge on that line was explicitly written — as a [typed link](/explicit-edge-builders/typed-links/) in frontmatter, a bullet in a [list note](/explicit-edge-builders/list-notes/), a folder structure in [Folder Notes](/explicit-edge-builders/folder-notes/), or any other [explicit edge builder](/explicit-edge-builders/). A human put it there.
 
 A **dashed line** means every edge on that line was generated automatically by Breadcrumbs' [implied relations](/implied-edge-builders/implied-edge-builders/) system — an opposite-direction rule, a transitive chain, or a sibling rule. No user ever declared it directly.
 
@@ -157,7 +157,7 @@ If you prefer arrowheads over the "no arrowhead" convention, add `mermaid-arrow:
 ## Next Steps
 
 - [[Mermaid Codeblock]] — full reference for `fields`, `depth`, `show-attributes`, `merge-fields`, and layout options
-- [Implied Edge Builders](/implied-edge-builders/implied-edge-builders/) — the rules that produce the dashed edges in your graph
+- [Implied Edge Builders](/implied-edge-builders/) — the rules that produce the dashed edges in your graph
 - [Transitive Implied Relations](/implied-edge-builders/transitive-implied-relations/) — configure and audit the multi-hop rules that are the most common source of unexpected dashed lines
-- [Vault Maintenance and Graph Auditing](vault-maintenance-and-graph-auditing/) — broader guide on auditing explicit vs implied edges across your entire vault
+- [Vault Maintenance and Graph Auditing](/guides/vault-maintenance-and-graph-auditing/) — broader guide on auditing explicit vs implied edges across your entire vault
 - [Freeze Crumbs to File](/commands/freeze-crumbs-to-file/) — convert inferred (dashed) edges into explicit (solid) ones by writing them into your notes as typed links

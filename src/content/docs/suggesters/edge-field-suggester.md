@@ -4,7 +4,7 @@ title: "Edge Field Suggester"
 The Edge Field Suggester lets you quickly add a new [typed-link](/explicit-edge-builders/typed-links/). It opens when you type the "_trigger string_" at the start of a line, it will then show you a list of all your [Edge Fields](/edge-fields/), and let you quickly select one.
 
 > [!NOTE]
-> This only applies to [Dataview typed-links](/explicit-edge-builders/typed-links/#dataview-links). For [Frontmatter typed-links](/explicit-edge-builders/typed-links/#frontmatter-links), all of your [Edge Fields](/edge-fields/) are automatically added as [Obsidian Properties](https://help.obsidian.md/Editing+and+formatting/Properties), so you get that auto-complete "for free" (in the same way as the [Metadata Field Suggester](metadata-field-suggester/) works).
+> This only applies to [Dataview typed-links](/explicit-edge-builders/typed-links/#dataview-links). For [Frontmatter typed-links](/explicit-edge-builders/typed-links/#frontmatter-links), all of your [Edge Fields](/edge-fields/) are automatically added as [Obsidian Properties](https://help.obsidian.md/Editing+and+formatting/Properties), so you get that auto-complete "for free" (in the same way as the [Metadata Field Suggester](/suggesters/metadata-field-suggester/) works).
 
 ## Settings
 

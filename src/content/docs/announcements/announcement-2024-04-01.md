@@ -17,5 +17,3 @@ The README currently serves as the full documentation, so detailed info about th
 ---
 
 Message Link: [Discord](https://discord.com/channels/686053708261228577/855181471643861002/1224258463023108198)
-
-next:: [Announcement 2024-04-06](announcement-2024-04-06/)

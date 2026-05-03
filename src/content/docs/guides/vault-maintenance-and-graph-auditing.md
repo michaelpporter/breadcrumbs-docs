@@ -29,7 +29,7 @@ A few things to look for:
 
 - **`edges.explicit`**: If implied edges outnumber explicit ones by a large margin, your graph depends heavily on inference. That's not necessarily wrong, but it's worth knowing.
 - **`edges.field`**: Which fields are carrying the most weight? A field with unexpectedly high counts might indicate a misconfigured implied rule.
-- **`edges.source`**: Tells you which [edge builders](/explicit-edge-builders/explicit-edge-builders/) are active. If `date_note` shows a large count you didn't expect, check your [Date Notes](/explicit-edge-builders/date-notes/) settings.
+- **`edges.source`**: Tells you which [edge builders](/explicit-edge-builders/) are active. If `date_note` shows a large count you didn't expect, check your [Date Notes](/explicit-edge-builders/date-notes/) settings.
 - **`nodes.resolved` false count**: Unresolved nodes are notes referenced in edges that don't exist as `.md` files. A non-zero count is worth investigating.
 
 > [!TIP]

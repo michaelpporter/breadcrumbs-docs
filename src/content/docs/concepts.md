@@ -24,7 +24,7 @@ graph LR
 
 Each node in the Breadcrumbs [Graph](#graph) represents a note in your Obsidian vault. They have the following attributes:
 
-- `resolved`: Whether the note is resolved or not (exists as a markdown file). An _unresolved_ node is referenced in an edge but has no corresponding `.md` file in the vault. Some builders (e.g. [date_note](explicit-edge-builders/date-notes/)'s "stretch to existing" option) behave differently for unresolved nodes.
+- `resolved`: Whether the note is resolved or not (exists as a markdown file). An _unresolved_ node is referenced in an edge but has no corresponding `.md` file in the vault. Some builders (e.g. [date_note](/explicit-edge-builders/date-notes/)'s "stretch to existing" option) behave differently for unresolved nodes.
 - `aliases`: Any aliases of the note, used for display purposes
 
 ## Edge Attributes
@@ -32,8 +32,8 @@ Each node in the Breadcrumbs [Graph](#graph) represents a note in your Obsidian 
 Edges in the Breadcrumbs [Graph](#graph) represent links between nodes (notes). These are _similar_ to Obsidian links, but can be created using other methods as well, not just `[[wikilinks]]`. Each edge has a few attributes:
 
 - `field`: Which [edge field](/edge-fields/) was used
-- `explicit`: Whether the edge is [explicit](explicit-edge-builders/explicit-edge-builders/) or [implied](/implied-edge-builders/implied-edge-builders/)
-- `source`: If the edge is explicit, which [edge builder](explicit-edge-builders/explicit-edge-builders/) added it
+- `explicit`: Whether the edge is [explicit](explicit-edge-builders/) or [implied](/implied-edge-builders/implied-edge-builders/)
+- `source`: If the edge is explicit, which [edge builder](/explicit-edge-builders/) added it
 - `implied_kind`: If the edge is implied, which [implied rule](/implied-edge-builders/implied-edge-builders/) added it
 - `round`: If the edge is implied, which [round](/implied-edge-builders/implied-relation-rounds/) was it added in
 
@@ -47,7 +47,7 @@ Various Breadcrumbs functions let you sort a list of (potentially nested) edges.
 - `path_natural`: same as `path`, but using natural sort order
 - `field`: sorts by the [field](/edge-fields/) of the edge
 - `explicit`: sorts by the explicitness of the edge — explicit edges sort before implied edges
-  - Uses `source` as a tiebreaker for [explicit](explicit-edge-builders/explicit-edge-builders/) edges, and `implied_kind` for [implied](/implied-edge-builders/implied-edge-builders/) edges
+  - Uses `source` as a tiebreaker for [explicit](/explicit-edge-builders/) edges, and `implied_kind` for [implied](/implied-edge-builders/implied-edge-builders/) edges
 
 There are more complex sort fields as well:
 
@@ -63,7 +63,7 @@ A _graph traversal_ is a systematic way to visit each node in a [Graph](#graph).
 
 So in short, a graph traversal is a way to explore all parts of a connected structure, like a city map, in a systematic and efficient way.
 
-Applied to Breadcrumbs, many of the [Views](/views/views/) run a traversal - starting from the currently active note - and find all paths going outwards. Often, the resulting paths are filtered, such that they meet some criteria (usually that every edge in the path has a given [field](/edge-fields/) attribute).
+Applied to Breadcrumbs, many of the [Views](/views/) run a traversal - starting from the currently active note - and find all paths going outwards. Often, the resulting paths are filtered, such that they meet some criteria (usually that every edge in the path has a given [field](/edge-fields/) attribute).
 
 ## Edge Field Groups
 
@@ -72,7 +72,7 @@ An _edge field group_ is a named collection of [edge fields](/edge-fields/) used
 > [!EXAMPLE]
 > A group called `"ups"` might contain the fields `up`, `parent`, and `broader`. Any view configured to use the `"ups"` group will traverse only those three fields.
 
-See [Field Groups](field-groups/) for configuration details. Field groups are used throughout the [Views](/views/views/) settings to control traversal scope.
+See [Field Groups](field-groups/) for configuration details. Field groups are used throughout the [Views](/views/) settings to control traversal scope.
 
 ## Implied Relation Rounds
 
@@ -99,7 +99,7 @@ Transitive rules are configured in Settings → Implied Relations → Transitive
 
 ## Show Node Options
 
-_Show node options_ control how note names are displayed in [Views](/views/views/) and [Codeblocks](/views/codeblocks/). Three toggles are available:
+_Show node options_ control how note names are displayed in [Views](/views/) and [Codeblocks](/views/codeblocks/). Three toggles are available:
 
 - `ext`: show the file extension (e.g. `note.md` instead of `note`)
 - `folder`: show the folder path prefix (e.g. `Projects/note`)

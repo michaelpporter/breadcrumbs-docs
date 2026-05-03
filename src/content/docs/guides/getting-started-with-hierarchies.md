@@ -65,7 +65,7 @@ up:: [[Music Genres]]
 Now do the same for `Classical` and `Electronic`. Each of the three child notes should have `up: "[[Music Genres]]"` in its frontmatter (or as a Dataview field).
 
 > [!INFO]
-> In the language of Breadcrumbs, you've just used the [typed-link edge builder](/explicit-edge-builders/typed-links/) to add three [explicit edges](/explicit-edge-builders/explicit-edge-builders/), each using the `up` [edge field](/edge-fields/).
+> In the language of Breadcrumbs, you've just used the [typed-link edge builder](/explicit-edge-builders/typed-links/) to add three [explicit edges](/explicit-edge-builders/), each using the `up` [edge field](/edge-fields/).
 
 ### 4. Rebuild the Graph
 
