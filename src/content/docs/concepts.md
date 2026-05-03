@@ -32,7 +32,7 @@ Each node in the Breadcrumbs [Graph](#graph) represents a note in your Obsidian 
 Edges in the Breadcrumbs [Graph](#graph) represent links between nodes (notes). These are _similar_ to Obsidian links, but can be created using other methods as well, not just `[[wikilinks]]`. Each edge has a few attributes:
 
 - `field`: Which [edge field](/edge-fields/) was used
-- `explicit`: Whether the edge is [explicit](explicit-edge-builders/) or [implied](/implied-edge-builders/)
+- `explicit`: Whether the edge is [explicit](/explicit-edge-builders/) or [implied](/implied-edge-builders/)
 - `source`: If the edge is explicit, which [edge builder](/explicit-edge-builders/) added it
 - `implied_kind`: If the edge is implied, which [implied rule](/implied-edge-builders/) added it
 - `round`: If the edge is implied, which [round](/implied-edge-builders/implied-relation-rounds/) was it added in
@@ -72,7 +72,7 @@ An _edge field group_ is a named collection of [edge fields](/edge-fields/) used
 > [!EXAMPLE]
 > A group called `"ups"` might contain the fields `up`, `parent`, and `broader`. Any view configured to use the `"ups"` group will traverse only those three fields.
 
-See [Field Groups](field-groups/) for configuration details. Field groups are used throughout the [Views](/views/) settings to control traversal scope.
+See [Field Groups](/field-groups/) for configuration details. Field groups are used throughout the [Views](/views/) settings to control traversal scope.
 
 ## Implied Relation Rounds
 

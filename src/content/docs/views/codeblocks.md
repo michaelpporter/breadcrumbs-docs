@@ -1,7 +1,7 @@
 ---
 title: "Codeblocks"
 ---
-Breadcrumbs adds a new codeblock language, `breadcrumbs`. Currently, this can be used to render a tree of all paths in a given direction from the current note (similar to the [Tree View](tree-view/)), a [Mermaid](https://mermaid.js.org) graph, or a [Markmap](https://markmap.js.org) mind map of the same data. The codeblocks use **YAML**, for example:
+Breadcrumbs adds a new codeblock language, `breadcrumbs`. Currently, this can be used to render a tree of all paths in a given direction from the current note (similar to the [Tree View](../tree-view/)), a [Mermaid](https://mermaid.js.org) graph, or a [Markmap](https://markmap.js.org) mind map of the same data. The codeblocks use **YAML**, for example:
 
 ```yaml
 type: tree
@@ -284,7 +284,7 @@ _Example_: `mermaid-arrow: true`
 
 ### Simulate the Matrix View
 
-You can show similar results to the [Matrix View](matrix-view/) using the following codeblock:
+You can show similar results to the [Matrix View](../matrix-view/) using the following codeblock:
 
 ```yaml
 type: tree

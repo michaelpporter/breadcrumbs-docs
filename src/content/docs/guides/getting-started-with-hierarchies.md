@@ -29,7 +29,7 @@ These defaults are intentionally generic, and they're a great place to start. `u
 > [!TIP]
 > **When to keep the defaults**: If your vault is primarily one type of content — notes, ideas, topics — the defaults work well. `up:: [[My MOC]]` is perfectly clear.
 >
-> **When to rename them**: Once you have _multiple_ kinds of hierarchy in the same vault, more specific names prevent confusion. The [Layered Daily Notes](layered-daily-notes/) guide uses `month` and `year` instead of plain `up`, so there's no ambiguity about which "up" is meant.
+> **When to rename them**: Once you have _multiple_ kinds of hierarchy in the same vault, more specific names prevent confusion. The [Layered Daily Notes](../layered-daily-notes/) guide uses `month` and `year` instead of plain `up`, so there's no ambiguity about which "up" is meant.
 
 You can view and edit your fields under `Settings > Edge Fields`.
 
@@ -130,6 +130,6 @@ You only need to add the `up` link in the child note. You do _not_ need to also 
 
 Once you're comfortable with a basic hierarchy, consider:
 
-- Renaming the generic fields to something more meaningful for your vault, as shown in the [Layered Daily Notes](layered-daily-notes/) guide
-- Modelling relationships between people using the [Personal Relationship Management](personal-relationship-management/) guide
+- Renaming the generic fields to something more meaningful for your vault, as shown in the [Layered Daily Notes](../layered-daily-notes/) guide
+- Modelling relationships between people using the [Personal Relationship Management](../personal-relationship-management/) guide
 - Using a [codeblock](/views/codeblocks/) in your `Music Genres` MOC note to auto-generate a list of all child notes

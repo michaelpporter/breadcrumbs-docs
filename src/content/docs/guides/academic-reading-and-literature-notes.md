@@ -200,4 +200,4 @@ Because `cites` is a same-level field, you can follow citation chains across mul
 
 ### Combining with Date Notes
 
-If your paper notes include a `year` frontmatter field, you can connect them to a [yearly note hierarchy](layered-daily-notes/) using an additional `year` field pointing upward. This lets you browse your reading history chronologically alongside the topical and authorship structure.
+If your paper notes include a `year` frontmatter field, you can connect them to a [yearly note hierarchy](../layered-daily-notes/) using an additional `year` field pointing upward. This lets you browse your reading history chronologically alongside the topical and authorship structure.

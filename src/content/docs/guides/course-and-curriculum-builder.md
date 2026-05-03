@@ -195,7 +195,7 @@ graph LR
 Now a learner can press `Alt+Right` at the end of any lesson to jump straight to the next one — no mouse required.
 
 > [!TIP]
-> Assign hotkeys to _both_ directions so learners can move fluidly back and forth. The [Layered Daily Notes](layered-daily-notes/) guide uses the same pattern for navigating between daily notes.
+> Assign hotkeys to _both_ directions so learners can move fluidly back and forth. The [Layered Daily Notes](../layered-daily-notes/) guide uses the same pattern for navigating between daily notes.
 
 ## Extras/Advanced Usage
 
