@@ -5,7 +5,7 @@ Similar to [Monica](https://github.com/monicahq/monica), Breadcrumbs can be used
 
 Using just a handful of simple, manual relations, we can automatically build complex networks of personal connections. For example, in a basic setup starting with the note `[[Myself]]`:
 
-![Personal Relationship Management Mermaid Diagram.png](/images/personal-relationship-management-mermaid-diagram.png)
+![Personal Relationship Management Mermaid Diagram.png](../images/personal-relationship-management-mermaid-diagram.png)
 
 ## Steps
 
@@ -19,7 +19,7 @@ We'll start off with some basic, immediate relationships. Add these under your [
 - `spouse`
 - `friend`
 
-![Personal Relationship Management EdgeFieldSettings.png](/images/personal-relationship-management-edgefieldsettings.png)
+![Personal Relationship Management EdgeFieldSettings.png](../images/personal-relationship-management-edgefieldsettings.png)
 
 ### 2. Add Some Typed-links
 
@@ -41,19 +41,19 @@ parent:: [[Mother]]
 
 ### 3. Implied Relationships
 
-Using the [Implied Edge Builders](/implied-edge-builders/implied-edge-builders/), we can craft custom relationships for Breadcrumbs to add automatically, based on the simpler ones added previously. For example, we could add the following:
+Using the [Implied Edge Builders](/implied-edge-builders/), we can craft custom relationships for Breadcrumbs to add automatically, based on the simpler ones added previously. For example, we could add the following:
 
 - `[parent] <- child`: You are your parent's child
 
-![transitive (parent) <- child.png](/images/transitive-(parent)-<--child.png)
+![transitive (parent) <- child.png](../images/transitive-(parent)-<--child.png)
 
 - `[parent, child] -> sibling`: Your parent's other children are your siblings
 
-![transitive (parent, child) -> sibling.png](/images/transitive-(parent,-child)-->-sibling.png)
+![transitive (parent, child) -> sibling.png](../images/transitive-(parent,-child)-->-sibling.png)
 
 - `[spouse, sibling] -> sibling-in-law`: Your spouse's sibling is your sibling-in-law
 
-![transitive (spouse, sibling) -> sibling-in-law.png](/images/transitive-(spouse,-sibling)-->-sibling-in-law.png)
+![transitive (spouse, sibling) -> sibling-in-law.png](../images/transitive-(spouse,-sibling)-->-sibling-in-law.png)
 
 > [!NOTE]
 > You can use any combination of fields in the implied rules. But the closing field also has to be in your [Edge Fields](/edge-fields/), so remember to add them there first.

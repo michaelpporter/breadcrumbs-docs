@@ -22,7 +22,7 @@ The four styles come from two orthogonal properties. Understand the properties f
 
 A **solid line** means at least one edge on that line was explicitly written — as a [typed link](/explicit-edge-builders/typed-links/) in frontmatter, a bullet in a [list note](/explicit-edge-builders/list-notes/), a folder structure in [Folder Notes](/explicit-edge-builders/folder-notes/), or any other [explicit edge builder](/explicit-edge-builders/). A human put it there.
 
-A **dashed line** means every edge on that line was generated automatically by Breadcrumbs' [implied relations](/implied-edge-builders/implied-edge-builders/) system — an opposite-direction rule, a transitive chain, or a sibling rule. No user ever declared it directly.
+A **dashed line** means every edge on that line was generated automatically by Breadcrumbs' [implied relations](/implied-edge-builders/) system — an opposite-direction rule, a transitive chain, or a sibling rule. No user ever declared it directly.
 
 > [!TIP]
 > Dashed lines are the most actionable signal in the diagram. If a dashed edge surprises you, a rule is firing that you may not have intended. Use `show-attributes: [source]` in a [codeblock](/views/codeblocks/) to see exactly which rule generated it, then trace back to `Settings > Implied Relations` to review or adjust the rule.

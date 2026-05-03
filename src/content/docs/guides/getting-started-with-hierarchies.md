@@ -85,7 +85,7 @@ You'll see the Matrix View appear in the sidebar. Under the `up` section, it sho
 Now switch to the `Music Genres` note. The Matrix View will flip to the perspective of that note, and under `down` you'll see all three child notes listed: `Jazz`, `Classical`, and `Electronic`.
 
 > [!TIP]
-> The `down` edges weren't added manually — Breadcrumbs infers them automatically as the opposite of the `up` edges you added. This is the [implied edges](/implied-edge-builders/implied-edge-builders/) system at work.
+> The `down` edges weren't added manually — Breadcrumbs infers them automatically as the opposite of the `up` edges you added. This is the [implied edges](/implied-edge-builders/) system at work.
 
 ### 6. Open the Trail View
 

@@ -32,9 +32,9 @@ Each node in the Breadcrumbs [Graph](#graph) represents a note in your Obsidian 
 Edges in the Breadcrumbs [Graph](#graph) represent links between nodes (notes). These are _similar_ to Obsidian links, but can be created using other methods as well, not just `[[wikilinks]]`. Each edge has a few attributes:
 
 - `field`: Which [edge field](/edge-fields/) was used
-- `explicit`: Whether the edge is [explicit](explicit-edge-builders/) or [implied](/implied-edge-builders/implied-edge-builders/)
+- `explicit`: Whether the edge is [explicit](explicit-edge-builders/) or [implied](/implied-edge-builders/)
 - `source`: If the edge is explicit, which [edge builder](/explicit-edge-builders/) added it
-- `implied_kind`: If the edge is implied, which [implied rule](/implied-edge-builders/implied-edge-builders/) added it
+- `implied_kind`: If the edge is implied, which [implied rule](/implied-edge-builders/) added it
 - `round`: If the edge is implied, which [round](/implied-edge-builders/implied-relation-rounds/) was it added in
 
 ## Edge Sorters
@@ -47,7 +47,7 @@ Various Breadcrumbs functions let you sort a list of (potentially nested) edges.
 - `path_natural`: same as `path`, but using natural sort order
 - `field`: sorts by the [field](/edge-fields/) of the edge
 - `explicit`: sorts by the explicitness of the edge — explicit edges sort before implied edges
-  - Uses `source` as a tiebreaker for [explicit](/explicit-edge-builders/) edges, and `implied_kind` for [implied](/implied-edge-builders/implied-edge-builders/) edges
+  - Uses `source` as a tiebreaker for [explicit](/explicit-edge-builders/) edges, and `implied_kind` for [implied](/implied-edge-builders/) edges
 
 There are more complex sort fields as well:
 
@@ -76,7 +76,7 @@ See [Field Groups](field-groups/) for configuration details. Field groups are us
 
 ## Implied Relation Rounds
 
-When Breadcrumbs generates [implied edges](/implied-edge-builders/implied-edge-builders/), it runs in numbered _rounds_. Explicit edges are treated as round `0`. In each subsequent round, the implied relation engine reads the edges produced so far and applies transitive rules to generate new edges, incrementing the round number.
+When Breadcrumbs generates [implied edges](/implied-edge-builders/), it runs in numbered _rounds_. Explicit edges are treated as round `0`. In each subsequent round, the implied relation engine reads the edges produced so far and applies transitive rules to generate new edges, incrementing the round number.
 
 This matters because an edge implied in round 1 can itself seed a new implication in round 2 — enabling deep chains (e.g. parent → grandparent → great-grandparent) to be built up iteratively. The `round` attribute on each implied edge records which pass produced it.
 

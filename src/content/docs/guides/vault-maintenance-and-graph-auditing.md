@@ -33,7 +33,7 @@ A few things to look for:
 - **`nodes.resolved` false count**: Unresolved nodes are notes referenced in edges that don't exist as `.md` files. A non-zero count is worth investigating.
 
 > [!TIP]
-> Run Graph Stats after any significant change to your [implied relations](/implied-edge-builders/implied-edge-builders/) settings. Comparing counts before and after is the fastest way to confirm a rule is doing what you intended.
+> Run Graph Stats after any significant change to your [implied relations](/implied-edge-builders/) settings. Comparing counts before and after is the fastest way to confirm a rule is doing what you intended.
 
 ### 2. Audit Explicit vs. Implied Edges with `show-attributes`
 

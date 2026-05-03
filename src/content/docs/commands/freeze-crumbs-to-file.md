@@ -1,7 +1,7 @@
 ---
 title: "Freeze Crumbs to File"
 ---
-This command takes all the [implied edges](/implied-edge-builders/implied-edge-builders/) leaving the current note, and makes them explicit by writing them to the file in the format you choose.
+This command takes all the [implied edges](/implied-edge-builders/) leaving the current note, and makes them explicit by writing them to the file in the format you choose.
 
 For example, if the current note has some implied edges pointing to other notes:
 
