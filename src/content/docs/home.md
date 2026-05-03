@@ -1,7 +1,5 @@
 ---
-title: Breadcrumbs
-description: Documentation for the Breadcrumbs Obsidian plugin.
-
+title: "Home"
 ---
 Welcome to the Breadcrumbs docs 🍞 Here you can find more detailed explanations of the various functions of the Obsidian [Breadcrumbs plugin](https://github.com/SkepticMystic/breadcrumbs).
 

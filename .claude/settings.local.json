@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/michaelporter/.claude/agents/**)",
+      "Read(//Users/michaelporter/.claude/**)"
+    ]
+  }
+}

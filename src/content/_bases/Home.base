@@ -127,6 +127,27 @@ views:
     showTags: false
     showDraftStatus: false
   - type: cms
+    name: Images
+    filters:
+      and:
+        - file.folder.startsWith("images")
+    sort:
+      - property: file.ctime
+        direction: DESC
+    imageFormat: cover
+    showDate: true
+    customizeNewButton: true
+    newNoteLocation: images
+    fallbackToEmbeds: if-empty
+    propertyDisplay1: file.fullname
+    showTextPreview: true
+    propertyLabels: above
+    titleProperty: file.fullname
+    titlePropertyNested: file.fullname
+    dateProperty: file.ctime
+    showTags: false
+    showDraftStatus: false
+  - type: cms
     name: Implied-Edge-Builders
     filters:
       and:

@@ -11,11 +11,27 @@
       "indexFileName": "index"
     },
     {
+      "id": "content-type-1777830876813-aucuwmhq2",
+      "name": "Announcements",
+      "folder": "announcements",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
       "id": "content-type-1777810631307-2z3mpcvja",
       "name": "Commands",
       "folder": "Commands",
       "fileOrganization": "file",
       "enabled": true,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777830876813-g1mfkfllx",
+      "name": "Commands",
+      "folder": "commands",
+      "fileOrganization": "file",
+      "enabled": false,
       "indexFileName": "index"
     },
     {
@@ -30,6 +46,14 @@
       "id": "content-type-1777810631307-u9l07i7yn",
       "name": "Explicit Edge Builders",
       "folder": "Explicit Edge Builders",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777830876813-uficinslb",
+      "name": "Explicit-edge-builders",
+      "folder": "explicit-edge-builders",
       "fileOrganization": "file",
       "enabled": false,
       "indexFileName": "index"
@@ -68,9 +92,25 @@
       "indexFileName": "index"
     },
     {
+      "id": "content-type-1777830876813-ew6li975u",
+      "name": "Images",
+      "folder": "images",
+      "fileOrganization": "file",
+      "enabled": true,
+      "indexFileName": "index"
+    },
+    {
       "id": "content-type-1777810631307-h09hwnh5j",
       "name": "Implied Edge Builders",
       "folder": "Implied Edge Builders",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777830876813-trv897lhw",
+      "name": "Implied-edge-builders",
+      "folder": "implied-edge-builders",
       "fileOrganization": "file",
       "enabled": false,
       "indexFileName": "index"
@@ -97,6 +137,14 @@
       "name": "Suggesters",
       "folder": "Suggesters",
       "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777830876813-j7prjg6wx",
+      "name": "Suggesters",
+      "folder": "suggesters",
+      "fileOrganization": "file",
       "enabled": true,
       "indexFileName": "index"
     },
@@ -104,6 +152,14 @@
       "id": "content-type-1777810631307-hiplmzr1b",
       "name": "Views",
       "folder": "Views",
+      "fileOrganization": "file",
+      "enabled": false,
+      "indexFileName": "index"
+    },
+    {
+      "id": "content-type-1777830876813-tetsmjuxc",
+      "name": "Views",
+      "folder": "views",
       "fileOrganization": "file",
       "enabled": true,
       "indexFileName": "index"
@@ -128,7 +184,7 @@
     },
     "content-type-1777810631307-2z3mpcvja": {
       "hasDraftStatus": false,
-      "template": "---\nBC-folder-note-field: \"\"\n---\n"
+      "template": "---\n---\n"
     },
     "content-type-1777810631307-u9l07i7yn": {
       "hasDraftStatus": false,
@@ -152,11 +208,25 @@
     },
     "content-type-1777811111363-ahihawjnk": {
       "hasDraftStatus": false,
-      "template": "---\nBC-folder-note-field: \"\"\naliases: []\n---\n"
+      "template": "---\n---\n"
     },
     "content-type-1777811111363-rzgunwjwt": {
       "hasDraftStatus": false,
-      "template": "---\naliases: []\n---\n"
+      "template": "---\n---\n"
+    },
+    "content-type-1777830876813-ew6li975u": {
+      "hasDraftStatus": false,
+      "template": "---\n---\n"
+    },
+    "content-type-1777830876813-j7prjg6wx": {
+      "titleProperty": "title",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\nBC-folder-note-field: \"\"\n---\n"
+    },
+    "content-type-1777830876813-tetsmjuxc": {
+      "titleProperty": "title",
+      "hasDraftStatus": false,
+      "template": "---\ntitle: \"{{title}}\"\nBC-folder-note-field: \"\"\n---\n"
     }
   },
   "attachmentHandlingMode": "subfolder",
@@ -204,7 +274,7 @@
         "id": "content-type-1777810631307-2z3mpcvja",
         "name": "Commands",
         "folder": "Commands",
-        "template": "---\nBC-folder-note-field: \"\"\n---\n",
+        "template": "---\n---\n",
         "enabled": true,
         "linkBasePath": "/Commands/",
         "creationMode": "file",
@@ -214,7 +284,7 @@
         "id": "content-type-1777811111363-ahihawjnk",
         "name": "Explicit-Edge-Builders",
         "folder": "Explicit-Edge-Builders",
-        "template": "---\nBC-folder-note-field: \"\"\naliases: []\n---\n",
+        "template": "---\n---\n",
         "enabled": true,
         "linkBasePath": "/Explicit-Edge-Builders/",
         "creationMode": "file",
@@ -231,10 +301,20 @@
         "indexFileName": "index"
       },
       {
+        "id": "content-type-1777830876813-ew6li975u",
+        "name": "Images",
+        "folder": "images",
+        "template": "---\n---\n",
+        "enabled": true,
+        "linkBasePath": "/images/",
+        "creationMode": "file",
+        "indexFileName": "index"
+      },
+      {
         "id": "content-type-1777811111363-rzgunwjwt",
         "name": "Implied-Edge-Builders",
         "folder": "Implied-Edge-Builders",
-        "template": "---\naliases: []\n---\n",
+        "template": "---\n---\n",
         "enabled": true,
         "linkBasePath": "/Implied-Edge-Builders/",
         "creationMode": "file",
@@ -251,22 +331,22 @@
         "indexFileName": "index"
       },
       {
-        "id": "content-type-1777810631307-jb9t6cshk",
+        "id": "content-type-1777830876813-j7prjg6wx",
         "name": "Suggesters",
-        "folder": "Suggesters",
-        "template": "---\nBC-folder-note-field: \"\"\n---\n",
+        "folder": "suggesters",
+        "template": "---\ntitle: \"{{title}}\"\nBC-folder-note-field: \"\"\n---\n",
         "enabled": true,
-        "linkBasePath": "/Suggesters/",
+        "linkBasePath": "/suggesters/",
         "creationMode": "file",
         "indexFileName": "index"
       },
       {
-        "id": "content-type-1777810631307-hiplmzr1b",
+        "id": "content-type-1777830876813-tetsmjuxc",
         "name": "Views",
-        "folder": "Views",
-        "template": "---\nBC-folder-note-field: \"\"\n---\n",
+        "folder": "views",
+        "template": "---\ntitle: \"{{title}}\"\nBC-folder-note-field: \"\"\n---\n",
         "enabled": true,
-        "linkBasePath": "/Views/",
+        "linkBasePath": "/views/",
         "creationMode": "file",
         "indexFileName": "index"
       }
