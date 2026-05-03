@@ -165,7 +165,7 @@
     {
       "id": "native-collapseAll",
       "name": "Collapse all",
-      "ariaLabel": "Expand all",
+      "ariaLabel": "Collapse all",
       "type": "native",
       "hidden": false
     },
