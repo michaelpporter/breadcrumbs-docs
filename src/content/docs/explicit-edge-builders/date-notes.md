@@ -9,8 +9,9 @@ flowchart LR
 	1(2022-01-01) -- next --> 2(2022-01-02) -- next --> 3(2022-01-03)
 ```
 
-> [!TIP]
-> Under the hood, Breadcrumbs takes the date of the current note and _adds one day_ to it. So the field you choose should reflect the "next" nature of this builder (as opposed to pointing to the date _before_ the current one).
+:::tip[TIP]
+Under the hood, Breadcrumbs takes the date of the current note and _adds one day_ to it. So the field you choose should reflect the "next" nature of this builder (as opposed to pointing to the date _before_ the current one).
+:::
 
 ## Settings
 
@@ -45,5 +46,6 @@ Each period level (Week, Month, Quarter, Year) has its own sub-section with the 
 - **Next Field**: The [field](/edge-fields/) used for sequential edges _between_ period notes of the same level (e.g. `2024-W03` → `2024-W04`)
 - **Up Field**: The [field](/edge-fields/) used for containment edges from a child note _up_ to its period note (e.g. `2024-01-15` → `2024-W03`)
 
-> [!TIP]
-> Period levels are independent — you can enable only Month and Year if you don't use weekly or quarterly notes.
+:::tip[TIP]
+Period levels are independent — you can enable only Month and Year if you don't use weekly or quarterly notes.
+:::

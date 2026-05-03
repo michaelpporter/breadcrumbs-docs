@@ -15,8 +15,9 @@ flowchart BT
 	A1 -.->|expert-in| T1
 ```
 
-> [!NOTE]
-> The `expert-in` edge shown above is _implied_ — Breadcrumbs derives it automatically from the `author` and `topic` chain. You never have to write it by hand.
+:::note[NOTE]
+The `expert-in` edge shown above is _implied_ — Breadcrumbs derives it automatically from the `author` and `topic` chain. You never have to write it by hand.
+:::
 
 ## Steps
 
@@ -77,15 +78,16 @@ BC-dataview-note-query: '"Papers" AND author = [[Vaswani et al.]]'
 
 Breadcrumbs will ask Dataview for every note inside the `Papers` folder whose `author` field links to `[[Vaswani et al.]]`, then add `author` edges from the author note to each of those papers.
 
-> [!TIP]
-> You can test your query in the Obsidian developer console (`Ctrl + Shift + I`) before committing it to the note:
->
-> ```ts
-> app.plugins.plugins.dataview.api.pages(
->   '"Papers" AND author = [[Vaswani et al.]]',
->   app.workspace.getActiveFile()?.path ?? ""
-> );
-> ```
+:::tip[TIP]
+You can test your query in the Obsidian developer console (`Ctrl + Shift + I`) before committing it to the note:
+
+```ts
+app.plugins.plugins.dataview.api.pages(
+  '"Papers" AND author = [[Vaswani et al.]]',
+  app.workspace.getActiveFile()?.path ?? ""
+);
+```
+:::
 
 ### 4. Infer Author Expertise with a Transitive Implied Rule
 
@@ -104,13 +106,14 @@ flowchart LR
 
 Make sure `expert-in` is also added to your [Edge Fields](/edge-fields/) first, then [rebuild the graph](/commands/rebuild-graph/). Each author note will now have implied `expert-in` edges pointing to every topic covered by their papers.
 
-> [!TIP]
-> You can [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) multiple rules at once. If you also want the reverse — a topic MOC pointing back to its expert authors — add:
->
-> ```
-> [author, topic] -> expert-in
-> [expert-in] <- expert-in
-> ```
+:::tip[TIP]
+You can [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) multiple rules at once. If you also want the reverse — a topic MOC pointing back to its expert authors — add:
+
+```
+[author, topic] -> expert-in
+[expert-in] <- expert-in
+```
+:::
 
 ### 5. Auto-Generated Bibliography with a Codeblock
 
@@ -163,8 +166,9 @@ expert-in:
 
 Those edges are now explicit and will be visible to anyone browsing the vault, with or without Breadcrumbs installed.
 
-> [!NOTE]
-> Freezing is a one-time snapshot. If you add more papers later, the `expert-in` edges in the frontmatter won't update on their own — you'll need to freeze again. For a live vault, it's usually better to leave implied edges as-is and only freeze when you're ready to export or publish.
+:::note[NOTE]
+Freezing is a one-time snapshot. If you add more papers later, the `expert-in` edges in the frontmatter won't update on their own — you'll need to freeze again. For a live vault, it's usually better to leave implied edges as-is and only freeze when you're ready to export or publish.
+:::
 
 ### 7. Leverage
 

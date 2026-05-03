@@ -8,8 +8,9 @@ description: Overview of the edge builders that add explicit typed edges to the 
 
 The _edge builders_ add edges to the [Breadcrumbs graph](/concepts/#graph) using the various sources of structure that already exist in your notes/vault. Some are relatively manual, like [Typed Links](typed-links/), while others are more flexible and automated, like [Date Notes](date-notes/).
 
-> [!TIP]
-> Any edge added by one of these edge builders is referred to as "_explicit_", because it came from existing structure in your vault (e.g. tags, folders, links, dates, etc.). In contrast, "_[implied](/implied-edge-builders/)_" edges are _not_ explicitly defined in your notes' metadata, but can be deduced _from your explicit edges_, based on the [Transitive Implied Relations](/implied-edge-builders/transitive-implied-relations/) rules you've added in your settings
+:::tip[TIP]
+Any edge added by one of these edge builders is referred to as "_explicit_", because it came from existing structure in your vault (e.g. tags, folders, links, dates, etc.). In contrast, "_[implied](/implied-edge-builders/)_" edges are _not_ explicitly defined in your notes' metadata, but can be deduced _from your explicit edges_, based on the [Transitive Implied Relations](/implied-edge-builders/transitive-implied-relations/) rules you've added in your settings
+:::
 
 The different edge builders include:
 

@@ -33,7 +33,7 @@ Next, add some notes for different people, and link them up using these new fiel
 parent: "[[Father]]"
 ---
 
-%% Dataview inline fields work, too %%
+<!-- Dataview inline fields work, too -->
 
 parent:: [[Mother]]
 ```
@@ -56,17 +56,19 @@ Using the [Implied Edge Builders](/implied-edge-builders/), we can craft custom 
 
 ![transitive (spouse, sibling) -> sibling-in-law.png](../images/transitive-(spouse,-sibling)-->-sibling-in-law.png)
 
-> [!NOTE]
-> You can use any combination of fields in the implied rules. But the closing field also has to be in your [Edge Fields](/edge-fields/), so remember to add them there first.
+:::note[NOTE]
+You can use any combination of fields in the implied rules. But the closing field also has to be in your [Edge Fields](/edge-fields/), so remember to add them there first.
+:::
 
-> [!TIP]
-> You can also [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) the rules:
->
-> ```
-> [parent] <- child
-> [parent, child] -> sibling
-> [spouse, sibling] -> sibling-in-law
-> ```
+:::tip[TIP]
+You can also [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) the rules:
+
+```
+[parent] <- child
+[parent, child] -> sibling
+[spouse, sibling] -> sibling-in-law
+```
+:::
 
 After adding some implied relations, [rebuild the graph](/commands/rebuild-graph/), and check the [Matrix View](/views/matrix-view/) again. You should see some extra relationships filled in, without you having to explicitly define them!
 

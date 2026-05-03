@@ -11,8 +11,9 @@ This page defines various concepts used across Breadcrumbs
 
 Breadcrumbs uses a graph data-structure to represent the links in your notes. This is very similar to the vanilla Obsidian graph, except now, edges have _types_ to them (these are stored in the [Edge Attributes](#edge-attributes)).
 
-> [!EXAMPLE]
-> A common use-case of graphs is representing personal-connections in a social network. Each person is represented as a _node_ in the graph, and connections between people (e.g. friendship) are represented as _edges_.
+:::tip[EXAMPLE]
+A common use-case of graphs is representing personal-connections in a social network. Each person is represented as a _node_ in the graph, and connections between people (e.g. friendship) are represented as _edges_.
+:::
 
 [Mermaid](https://mermaid.js.org) is used to visualisation graphs in a few places across Breadcrumbs, mainly in [Codeblocks](/views/codeblocks/). A simple example of a graph is:
 
@@ -70,8 +71,9 @@ Applied to Breadcrumbs, many of the [Views](/views/) run a traversal - starting 
 
 An _edge field group_ is a named collection of [edge fields](/edge-fields/) used to filter which edges are considered by a view or command. Rather than specifying individual fields each time, you define a group once and reference it by name.
 
-> [!EXAMPLE]
-> A group called `"ups"` might contain the fields `up`, `parent`, and `broader`. Any view configured to use the `"ups"` group will traverse only those three fields.
+:::tip[EXAMPLE]
+A group called `"ups"` might contain the fields `up`, `parent`, and `broader`. Any view configured to use the `"ups"` group will traverse only those three fields.
+:::
 
 See [Field Groups](/field-groups/) for configuration details. Field groups are used throughout the [Views](/views/) settings to control traversal scope.
 
@@ -81,8 +83,9 @@ When Breadcrumbs generates [implied edges](/implied-edge-builders/), it runs in 
 
 This matters because an edge implied in round 1 can itself seed a new implication in round 2 — enabling deep chains (e.g. parent → grandparent → great-grandparent) to be built up iteratively. The `round` attribute on each implied edge records which pass produced it.
 
-> [!INFO]
-> The maximum number of rounds is capped at 10.
+:::note[INFO]
+The maximum number of rounds is capped at 10.
+:::
 
 ## Transitive Implied Relations
 
@@ -93,8 +96,9 @@ A _transitive implied relation_ is a rule that chains a sequence of edge fields 
 - `close_reversed`: when `true`, the implied edge points from the _end_ node back to the _start_ node instead of start → end
 - `rounds`: how many [rounds](#implied-relation-rounds) to run the rule
 
-> [!EXAMPLE]
-> A rule with `chain: [up, up]` and `close_field: grandparent` means: if A →[up]→ B and B →[up]→ C, then imply A →[grandparent]→ C.
+:::tip[EXAMPLE]
+A rule with `chain: [up, up]` and `close_field: grandparent` means: if A →[up]→ B and B →[up]→ C, then imply A →[grandparent]→ C.
+:::
 
 Transitive rules are configured in Settings → Implied Relations → Transitive.
 
@@ -116,8 +120,9 @@ The [Matrix View](/views/matrix-view/) and [Tree View](/views/tree-view/) can be
 
 The [Tree View](/views/tree-view/) has a _find root_ option. When enabled, instead of starting the traversal from the currently active note, Breadcrumbs first traverses _upward_ (using a configured set of [[Edge Field Groups|field groups]], defaulting to `"ups"`) to find the root ancestor, then renders the full tree downward from there.
 
-> [!EXAMPLE]
-> If you're on `2024-01-15` and find root is enabled with the `"ups"` group, the tree will show the full year/month/week/day hierarchy rooted at `2024`, not just the subtree below `2024-01-15`.
+:::tip[EXAMPLE]
+If you're on `2024-01-15` and find root is enabled with the `"ups"` group, the tree will show the full year/month/week/day hierarchy rooted at `2024`, not just the subtree below `2024-01-15`.
+:::
 
 ## Crumb Destination
 

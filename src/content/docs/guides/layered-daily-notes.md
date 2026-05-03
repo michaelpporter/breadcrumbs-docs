@@ -12,8 +12,9 @@ flowchart BT
 
 There are various ways this structure can be achieved. The method in this guide will use the [Templater plugin](https://silentvoid13.github.io/Templater/) to add templates with [Typed Links](/explicit-edge-builders/typed-links/) in them to point `up` to the Monthly and Yearly Notes. Then, using Breadcrumbs' [Date Notes](/explicit-edge-builders/date-notes/) feature (_different from the core Daily Notes plugin_), we'll point each Daily Note to the note following it (`yesterday/tomorrow`).
 
-> [!NOTE]
-> The `yesterday/tomorrow` edges aren't shown in the Mermaid graph, as it complicates the layout. But the idea is to use the `up/down` directions to go from day to month to year, and the `previous/next` directions to move between Daily Notes in chronological order.
+:::note[NOTE]
+The `yesterday/tomorrow` edges aren't shown in the Mermaid graph, as it complicates the layout. But the idea is to use the `up/down` directions to go from day to month to year, and the `previous/next` directions to move between Daily Notes in chronological order.
+:::
 
 ## Steps
 
@@ -58,8 +59,9 @@ graph BT
 	2(2024-04-27) -->|month| 1(2024-04)
 ```
 
-> [!NOTE]
-> Don't worry about the `tomorrow` field just yet, we'll use that later.
+:::note[NOTE]
+Don't worry about the `tomorrow` field just yet, we'll use that later.
+:::
 
 ### 3. Monthly Note Template
 
@@ -126,14 +128,15 @@ To set this up, open `Settings > Implied Relations > Transitive`, and add the fo
 
 ![transitive (next-month) <- prev-month.png](../images/transitive-(next-month)-<--prev-month.png)
 
-> [!TIP]
-> You can also [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) the rules:
->
-> ```
-> [month] <- days
-> [tomorrow] <- yesterday
-> [next-month] <- prev-month
-> ```
+:::tip[TIP]
+You can also [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) the rules:
+
+```
+[month] <- days
+[tomorrow] <- yesterday
+[next-month] <- prev-month
+```
+:::
 
 Now, when you [rebuild the graph](/commands/rebuild-graph/), Breadcrumbs will apply these rules to your _explicit_ edges, by adding the **implied** edges above. It "fills in the opposite direction".
 

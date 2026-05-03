@@ -8,8 +8,9 @@ In `Settings > Edge Fields`, you can create new groups and add fields to them. S
 
 ![Edge Field Groups Settings.png](images/edge-field-groups-settings.png)
 
-> [!TIP]
-> This is a many-to-many relationship, i.e. a group can hold many fields, and a field can belong to many groups.
+:::tip[TIP]
+This is a many-to-many relationship, i.e. a group can hold many fields, and a field can belong to many groups.
+:::
 
 By default, Breadcrumbs comes with 5 groups, representing the directions: "up", "same", "down", "next", "previous". If you add a new [edge field](/edge-fields/), like `parent`, for example, you could put that field into the `ups` group, because it semantically points "upward" from the child note to the parent.
 

@@ -15,8 +15,9 @@ An example output would be:
   - [[F]]
 ```
 
-> [!TIP]
-> The output format matches the required format for the [List Notes](/explicit-edge-builders/list-notes/) edge source. So you can paste this list into a note, and then use it as a List Note.
+:::tip[TIP]
+The output format matches the required format for the [List Notes](/explicit-edge-builders/list-notes/) edge source. So you can paste this list into a note, and then use it as a List Note.
+:::
 
 ## Settings
 

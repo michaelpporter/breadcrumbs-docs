@@ -15,8 +15,9 @@ flowchart RL
 	1(A.B.C) -- up --> 2(A.B) -- up --> 3(A)
 ```
 
-> [!IMPORTANT]
-> Breadcrumbs always looks for the note "upwards" of the previous, so pick a field that reflects this.
+:::tip[IMPORTANT]
+Breadcrumbs always looks for the note "upwards" of the previous, so pick a field that reflects this.
+:::
 
 ## Settings
 

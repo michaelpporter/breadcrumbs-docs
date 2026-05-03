@@ -4,8 +4,9 @@ description: Commands that open the first neighbour of the current note in a giv
 ---
 These commands let you quickly jump around your Breadcrumbs graph. For each of your [Field Groups](/field-groups/), there is a command to jump to the first neighbour in that field.
 
-> [!TIP]
-> Set some hotkeys for the different directions to quickly jump around the graph ⚡️
+:::tip[TIP]
+Set some hotkeys for the different directions to quickly jump around the graph ⚡️
+:::
 
 For example, in the following chain of [Date Notes](/explicit-edge-builders/date-notes/), you could run the `Jump to First Neighbour in group:nexts` command to jump from the current note to the next day's note
 

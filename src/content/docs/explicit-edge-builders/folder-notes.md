@@ -39,5 +39,6 @@ flowchart TD
 	1(folder/index) -- down --> 2(folder/A) & 3(folder/B) & 4(folder/subfolder/a)
 ```
 
-> [!IMPORTANT]
-> This doesn't create _nested_ edges. It effectively flattens your folder structure into one level, so notes in subfolders will still be added as children of the _top-level_ folder note, not as children of the notes in the subfolders.
+:::tip[IMPORTANT]
+This doesn't create _nested_ edges. It effectively flattens your folder structure into one level, so notes in subfolders will still be added as children of the _top-level_ folder note, not as children of the notes in the subfolders.
+:::

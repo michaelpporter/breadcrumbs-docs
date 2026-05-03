@@ -33,8 +33,9 @@ A few things to look for:
 - **`edges.source`**: Tells you which [edge builders](/explicit-edge-builders/) are active. If `date_note` shows a large count you didn't expect, check your [Date Notes](/explicit-edge-builders/date-notes/) settings.
 - **`nodes.resolved` false count**: Unresolved nodes are notes referenced in edges that don't exist as `.md` files. A non-zero count is worth investigating.
 
-> [!TIP]
-> Run Graph Stats after any significant change to your [implied relations](/implied-edge-builders/) settings. Comparing counts before and after is the fastest way to confirm a rule is doing what you intended.
+:::tip[TIP]
+Run Graph Stats after any significant change to your [implied relations](/implied-edge-builders/) settings. Comparing counts before and after is the fastest way to confirm a rule is doing what you intended.
+:::
 
 ### 2. Audit Explicit vs. Implied Edges with `show-attributes`
 
@@ -53,8 +54,9 @@ show-attributes: [source]
 
 Each item in the resulting tree will show its source attribute next to it. Edges you wrote yourself will show a source like `typed_link` or `date_note`. Implied edges will show `implied` instead.
 
-> [!NOTE]
-> The `source` attribute is only populated for explicit edges. For implied edges, Breadcrumbs shows the `implied_kind` instead — for example, `opposite_direction` or `same_field_sibling_of`. This distinction is useful when tracking down unexpected connections.
+:::note[NOTE]
+The `source` attribute is only populated for explicit edges. For implied edges, Breadcrumbs shows the `implied_kind` instead — for example, `opposite_direction` or `same_field_sibling_of`. This distinction is useful when tracking down unexpected connections.
+:::
 
 You can also combine `show-attributes` with `show-attributes: [field, source]` to see both the edge field _and_ its origin at once:
 
@@ -95,8 +97,9 @@ dataview-from: '#area and !"Archive"'
 ```
 ````
 
-> [!NOTE]
-> The `dataview-from` filter requires the [Dataview plugin](http://blacksmithgu.github.io/obsidian-dataview/) to be installed and enabled. The query string follows Dataview's `FROM` syntax.
+:::note[NOTE]
+The `dataview-from` filter requires the [Dataview plugin](http://blacksmithgu.github.io/obsidian-dataview/) to be installed and enabled. The query string follows Dataview's `FROM` syntax.
+:::
 
 This makes it practical to audit one section of the vault at a time — for example, checking that all your `Projects` notes have explicit `up` edges before archiving them.
 
@@ -136,18 +139,21 @@ graph BT
 	Note -->|up| Parent
 ```
 
-> [!WARNING]
-> Freezing edges is a one-way operation for the current note. The edge becomes explicit, so if your implied rules change later, the now-explicit edge won't automatically update. Review the results after freezing to make sure they match your intent.
+:::danger[!WARNING]
+Freezing edges is a one-way operation for the current note. The edge becomes explicit, so if your implied rules change later, the now-explicit edge won't automatically update. Review the results after freezing to make sure they match your intent.
+:::
 
-> [!TIP]
-> If you want to freeze edges across many notes at once, consider using the [codeblock audit](/views/codeblocks/) approach from step 2 first to identify which notes have implied edges, then work through them note by note.
+:::tip[TIP]
+If you want to freeze edges across many notes at once, consider using the [codeblock audit](/views/codeblocks/) approach from step 2 first to identify which notes have implied edges, then work through them note by note.
+:::
 
 ### 5. Style Explicit and Implied Edges in Views
 
 Once you understand the distinction between explicit and implied edges, it's helpful to make it visible. Breadcrumbs adds CSS classes to its views that reflect edge attributes, so you can use a CSS snippet to style implied items differently.
 
-> [!NOTE]
-> The [Styling](/styling/) page is the authoritative reference for all Breadcrumbs CSS classes. What follows are practical examples for this specific use-case.
+:::note[NOTE]
+The [Styling](/styling/) page is the authoritative reference for all Breadcrumbs CSS classes. What follows are practical examples for this specific use-case.
+:::
 
 Create a new CSS snippet in your vault (`.obsidian/snippets/breadcrumbs-audit.css`) and enable it under `Settings > Appearance > CSS snippets`. A simple starting point:
 
@@ -175,8 +181,9 @@ You can take a similar approach in [codeblock trees](/views/codeblocks/):
 }
 ```
 
-> [!TIP]
-> Open the developer tools (`Ctrl + Shift + I`) and inspect a Breadcrumbs view element to see exactly which `data-*` attributes are available on nodes in your vault. The attribute names correspond directly to the [edge attributes](/concepts/#edge-attributes) documented in Concepts.
+:::tip[TIP]
+Open the developer tools (`Ctrl + Shift + I`) and inspect a Breadcrumbs view element to see exactly which `data-*` attributes are available on nodes in your vault. The attribute names correspond directly to the [edge attributes](/concepts/#edge-attributes) documented in Concepts.
+:::
 
 ## Putting It Together
 
@@ -189,5 +196,6 @@ A practical maintenance routine might look like this:
 5. Freeze implied edges on any notes that are headed for Obsidian Publish or an archive.
 6. Check the developer console for any [edge build errors](/debugging/#edge-build-errors) that surfaced during the rebuild.
 
-> [!TIP]
-> If the console shows edge build errors after a rebuild, set the [log level](/debugging/#log-levels) to `DEBUG` temporarily under `Settings > Debug`. This will surface more detail about which notes or fields are causing the problem, making it much easier to trace back to a misconfigured implied rule or a missing [edge field](/edge-fields/).
+:::tip[TIP]
+If the console shows edge build errors after a rebuild, set the [log level](/debugging/#log-levels) to `DEBUG` temporarily under `Settings > Debug`. This will surface more detail about which notes or fields are causing the problem, making it much easier to trace back to a misconfigured implied rule or a missing [edge field](/edge-fields/).
+:::

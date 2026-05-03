@@ -13,8 +13,9 @@ BC-tag-note-field: "<field>"
 
 Where `<field>` is one of your [edge fields](/edge-fields/). This will tell Breadcrumbs to find all notes with the tag `#tag`, and add edges from the current note to those tagged notes using the field you specify.
 
-> [!NOTE]
-> You don't _have to_ add the leading `#`, Breadcrumbs will handle either case
+:::note[NOTE]
+You don't _have to_ add the leading `#`, Breadcrumbs will handle either case
+:::
 
 For example, point `down` to all notes with the #markdown tag:
 

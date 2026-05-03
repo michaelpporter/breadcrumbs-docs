@@ -34,8 +34,9 @@ child:: [[B]], [[C]]
 
 This creates the same structure as the [frontmatter links](../typed-links/#frontmatter-links) method above.
 
-> [!TIP]
-> Use the [Edge Field Suggester](/suggesters/edge-field-suggester/) to speed up adding Dataview typed-links
+:::tip[TIP]
+Use the [Edge Field Suggester](/suggesters/edge-field-suggester/) to speed up adding Dataview typed-links
+:::
 
 ### Markdown Links
 

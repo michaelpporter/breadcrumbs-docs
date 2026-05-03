@@ -25,8 +25,9 @@ Define four fields under `Settings > Edge Fields` ([Edge Fields](/edge-fields/))
 - `task`: Points up from a task note to the project note it belongs to
 - `blocks`: Points forward from one task to a task it must precede
 
-> [!NOTE]
-> `blocks` and `blocked-by` live at the same level in the hierarchy — they express dependencies between sibling tasks, not parent/child relationships. You only need to add `blocks`; `blocked-by` can be derived automatically in [step 4](#4.-implied-relationships).
+:::note[NOTE]
+`blocks` and `blocked-by` live at the same level in the hierarchy — they express dependencies between sibling tasks, not parent/child relationships. You only need to add `blocks`; `blocked-by` can be derived automatically in [step 4](#4.-implied-relationships).
+:::
 
 The finished field list should look something like this:
 
@@ -65,8 +66,9 @@ flowchart TB
 	P -- tasks --> T2(Write draft)
 ```
 
-> [!TIP]
-> You can nest bullets to model sub-tasks. A nested item will be linked from its parent bullet, not directly from the project note. Use [field overrides](/explicit-edge-builders/list-notes/#field-overrides) on individual items if a particular task needs a different field.
+:::tip[TIP]
+You can nest bullets to model sub-tasks. A nested item will be linked from its parent bullet, not directly from the project note. Use [field overrides](/explicit-edge-builders/list-notes/#field-overrides) on individual items if a particular task needs a different field.
+:::
 
 For cross-task dependencies, simply add the `blocks` field inside the task note that comes first:
 
@@ -103,8 +105,9 @@ flowchart TD
 	I -- area --> P3(Projects/Get fit)
 ```
 
-> [!NOTE]
-> Each project note still carries its own `project: [[Career]]` (or whichever life-area note applies) in its frontmatter. The Folder Note gives you a flat index of all projects in one place, while the `project` field in each note provides the meaningful hierarchy.
+:::note[NOTE]
+Each project note still carries its own `project: [[Career]]` (or whichever life-area note applies) in its frontmatter. The Folder Note gives you a flat index of all projects in one place, while the `project` field in each note provides the meaningful hierarchy.
+:::
 
 ### 4. Implied Relationships
 
@@ -116,14 +119,15 @@ Several relationships can be _derived_ rather than typed manually. Open `Setting
 
 - `[project, task] -> area` — traverse two hops (project → area, then area → tasks) to give every task note a direct `area` edge back to its life area
 
-> [!TIP]
-> You can [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) all three rules at once:
->
-> ```
-> [task] <- tasks
-> [blocks] <- blocked-by
-> [project, task] -> area
-> ```
+:::tip[TIP]
+You can [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) all three rules at once:
+
+```
+[task] <- tasks
+[blocks] <- blocked-by
+[project, task] -> area
+```
+:::
 
 The third rule is the most powerful for weekly reviews: instead of manually navigating up two levels, every task note will show its life area directly in the [Matrix View](/views/matrix-view/), making it easy to filter or group by area across your whole vault.
 
@@ -159,8 +163,9 @@ show-attributes: [field]
 
 This produces a Mermaid diagram scoped to the current note, traversing `area` edges down to projects and `tasks` edges further down to individual tasks. Because the diagram is generated dynamically, it stays up to date as you add projects and tasks.
 
-> [!TIP]
-> Swap `type: mermaid` for `type: tree` if you prefer an indented outline instead of a graph. The `fields` option controls which edge fields are followed, so you can limit the view to just `area` if you only want to see projects without drilling into tasks.
+:::tip[TIP]
+Swap `type: mermaid` for `type: tree` if you prefer an indented outline instead of a graph. The `fields` option controls which edge fields are followed, so you can limit the view to just `area` if you only want to see projects without drilling into tasks.
+:::
 
 ### 6. Leverage
 

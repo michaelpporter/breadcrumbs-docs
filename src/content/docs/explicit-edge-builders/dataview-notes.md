@@ -22,12 +22,13 @@ BC-dataview-note-query: '"#tag" AND "Folder"'
 ---
 ```
 
-> [!TIP]
-> The `query` is passed directly to the [Dataview API](https://github.com/blacksmithgu/obsidian-dataview/blob/master/src/api/plugin-api.ts) `pages` method, which you can test out in the Obsidian console with the following (press `Ctrl + Shift + I` to open the console):
->
-> ```ts
-> app.plugins.plugins.dataview.api.pages(
->   "<query>",
->   app.workspace.getActiveFile()?.path ?? ""
-> );
-> ```
+:::tip[TIP]
+The `query` is passed directly to the [Dataview API](https://github.com/blacksmithgu/obsidian-dataview/blob/master/src/api/plugin-api.ts) `pages` method, which you can test out in the Obsidian console with the following (press `Ctrl + Shift + I` to open the console):
+
+```ts
+app.plugins.plugins.dataview.api.pages(
+  "<query>",
+  app.workspace.getActiveFile()?.path ?? ""
+);
+```
+:::

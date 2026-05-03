@@ -12,8 +12,9 @@ graph LR
     N7(Sibling A) -.- N8(Sibling B)
 ```
 
-> [!NOTE]
-> This diagram is a reference legend. Each pair of nodes illustrates one arrow style in isolation. The sections below explain when each style appears and what it means.
+:::note[NOTE]
+This diagram is a reference legend. Each pair of nodes illustrates one arrow style in isolation. The sections below explain when each style appears and what it means.
+:::
 
 ## The Two Axes
 
@@ -25,8 +26,9 @@ A **solid line** means at least one edge on that line was explicitly written —
 
 A **dashed line** means every edge on that line was generated automatically by Breadcrumbs' [implied relations](/implied-edge-builders/) system — an opposite-direction rule, a transitive chain, or a sibling rule. No user ever declared it directly.
 
-> [!TIP]
-> Dashed lines are the most actionable signal in the diagram. If a dashed edge surprises you, a rule is firing that you may not have intended. Use `show-attributes: [source]` in a [codeblock](/views/codeblocks/) to see exactly which rule generated it, then trace back to `Settings > Implied Relations` to review or adjust the rule.
+:::tip[TIP]
+Dashed lines are the most actionable signal in the diagram. If a dashed edge surprises you, a rule is firing that you may not have intended. Use `show-attributes: [source]` in a [codeblock](/views/codeblocks/) to see exactly which rule generated it, then trace back to `Settings > Implied Relations` to review or adjust the rule.
+:::
 
 ### 2. Arrow vs No Arrow — Directionality
 
@@ -34,11 +36,13 @@ An **arrow** (`>`) means the edge exists in only one direction between this pair
 
 **No arrowhead** means edges were found in _both_ directions between this pair and were folded onto a single line. Breadcrumbs omits the arrowhead in this case because adding one would be misleading — it would imply one note owns the relationship when in fact both sides hold a connection.
 
-> [!TIP]
-> An undirected line is not ambiguous — it is precise. The absence of an arrowhead is a deliberate signal: both directions exist and the diagram is not going to misrepresent which one matters more. No arrowhead means equal standing, not missing information.
+:::tip[TIP]
+An undirected line is not ambiguous — it is precise. The absence of an arrowhead is a deliberate signal: both directions exist and the diagram is not going to misrepresent which one matters more. No arrowhead means equal standing, not missing information.
+:::
 
-> [!NOTE]
-> Setting `mermaid-arrow: true` in a [breadcrumbs codeblock](/views/codeblocks/) changes this behaviour. Undirected edges that would normally render as `---` or `-.-` instead receive arrowheads on both ends — `<--->` and `<.->` respectively. This makes the bidirectionality explicit in the diagram rather than implicit in the absence of an arrowhead. One-directional edges (`-->` and `-.->`) are unaffected.
+:::note[NOTE]
+Setting `mermaid-arrow: true` in a [breadcrumbs codeblock](/views/codeblocks/) changes this behaviour. Undirected edges that would normally render as `---` or `-.-` instead receive arrowheads on both ends — `<--->` and `<.->` respectively. This makes the bidirectionality explicit in the diagram rather than implicit in the absence of an arrowhead. One-directional edges (`-->` and `-.->`) are unaffected.
+:::
 
 ## The Four Arrow Types
 
@@ -125,8 +129,9 @@ The Mermaid codeblock always folds opposing edges onto a single line. Whenever B
 
 The most common trigger is the opposite-direction implied rule. When it is active for a field, every explicit edge you write automatically gains an inferred reverse, and the pair always appears as `---` in the Mermaid view. This is expected and healthy behaviour.
 
-> [!NOTE]
-> The [Matrix View](/views/matrix-view/) and [Tree View](/views/tree-view/) show each direction as a separate entry and are not subject to this collapsing. If you need to inspect the individual directions of a relationship, use those views. The Mermaid view collapses opposing edges to keep diagrams readable.
+:::note[NOTE]
+The [Matrix View](/views/matrix-view/) and [Tree View](/views/tree-view/) show each direction as a separate entry and are not subject to this collapsing. If you need to inspect the individual directions of a relationship, use those views. The Mermaid view collapses opposing edges to keep diagrams readable.
+:::
 
 If you see `---` or `-.-` lines and want to understand which specific edges were merged, add `show-attributes: [field]` to the codeblock:
 
@@ -152,8 +157,9 @@ If you prefer arrowheads over the "no arrowhead" convention, add `mermaid-arrow:
 
 **Directed arrows (`-->` and `-.->`) mark one-way relationships.** This is by design for sequential fields like `next` — where a `prev` reverse is often not configured. A high count of directed arrows can also indicate that an opposite-direction implied rule is missing for a field you expected it to cover.
 
-> [!TIP]
-> To copy the raw Mermaid code that Breadcrumbs generated, use the copy icon in the top-left corner of the codeblock. Paste it into [mermaid.live](https://mermaid.live) to inspect the exact syntax of each edge and verify which arrow style was assigned.
+:::tip[TIP]
+To copy the raw Mermaid code that Breadcrumbs generated, use the copy icon in the top-left corner of the codeblock. Paste it into [mermaid.live](https://mermaid.live) to inspect the exact syntax of each edge and verify which arrow style was assigned.
+:::
 
 ## Next Steps
 

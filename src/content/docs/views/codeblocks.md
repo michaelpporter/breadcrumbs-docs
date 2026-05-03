@@ -79,8 +79,9 @@ If `false`, each of the chosen `fields` is [traversed](/concepts/#traversal) sep
 
 _Example_: `merge-fields: true`
 
-> [!TIP]
-> Another way to think of this is that `merge-fields: true` will run a _single_ traversal, where all fields are allowed in the path. Whereas `merge-fields: false` will run _multiple_ traversals - one for each field.
+:::tip[TIP]
+Another way to think of this is that `merge-fields: true` will run a _single_ traversal, where all fields are allowed in the path. Whereas `merge-fields: false` will run _multiple_ traversals - one for each field.
+:::
 
 Consider the following graph:
 
@@ -270,14 +271,16 @@ When set to `true`, those same bidirectional edges gain arrowheads on both ends 
 
 One-directional edges are unaffected — they always render as `-->` (explicit) or `-.->` (implied) regardless of this setting.
 
-> [!EXAMPLE]
-> Suppose your vault has a `parent`/`child` implied-relation pair, so an explicit `up` edge from `2024-01-15` to `January 2024` also generates an implied `down` edge back. In the mermaid graph:
->
-> - `mermaid-arrow: false` — the two notes are connected by a plain line (`-.-`) with no arrowheads, since the relationship is bidirectional and implied.
-> - `mermaid-arrow: true` — the connector becomes `<.->`, showing arrowheads on both ends so the direction of each relationship is visible.
+:::tip[EXAMPLE]
+Suppose your vault has a `parent`/`child` implied-relation pair, so an explicit `up` edge from `2024-01-15` to `January 2024` also generates an implied `down` edge back. In the mermaid graph:
 
-> [!TIP]
-> Use `mermaid-arrow: true` when sharing a graph with someone unfamiliar with your vault structure, or when the direction of implied edges matters for understanding (e.g., a `reports-to` hierarchy where both the explicit and implied edges carry meaning).
+- `mermaid-arrow: false` — the two notes are connected by a plain line (`-.-`) with no arrowheads, since the relationship is bidirectional and implied.
+- `mermaid-arrow: true` — the connector becomes `<.->`, showing arrowheads on both ends so the direction of each relationship is visible.
+:::
+
+:::tip[TIP]
+Use `mermaid-arrow: true` when sharing a graph with someone unfamiliar with your vault structure, or when the direction of implied edges matters for understanding (e.g., a `reports-to` hierarchy where both the explicit and implied edges carry meaning).
+:::
 
 _Example_: `mermaid-arrow: true`
 

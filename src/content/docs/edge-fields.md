@@ -23,7 +23,7 @@ child: "[[Me]]"
 parent: "[[Mother]]"
 ---
 
-%% Works with Dataview inline fields, too %%
+<!-- Works with Dataview inline fields, too -->
 
 parent:: [[Mother]]
 ```

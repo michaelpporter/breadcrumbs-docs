@@ -99,8 +99,9 @@ flowchart TB
 	3 -- next --> 5
 ```
 
-> [!NOTE]
-> The layout of the graph kind of obscures it, but `B` and `D` are on the same level here
+:::note[NOTE]
+The layout of the graph kind of obscures it, but `B` and `D` are on the same level here
+:::
 
 ## Settings
 

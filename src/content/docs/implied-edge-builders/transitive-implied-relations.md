@@ -4,15 +4,16 @@ description: Rules that collapse a chain of edge fields into a single implied ed
 ---
 This category of [Implied Edge Builders](/implied-edge-builders/) can be thought of as a _chain_ of fields which collapse down to one field.
 
-> [!EXAMPLE]
-> For example, My parent's parent is my grandparent. This is a _transitive_ implied relation, represented with the following syntax, `[parent, parent] -> grandparent` (a chain of two `parent` fields collapses down to one `grandparent` field between the start and end nodes):
->
-> ```mermaid
-> flowchart LR
-> 1(Me) -- parent --> 2(Mother)
-> 2 -- parent --> 3(Grandfather)
-> 1 -. grandparent .-> 3
-> ```
+:::tip[EXAMPLE]
+For example, My parent's parent is my grandparent. This is a _transitive_ implied relation, represented with the following syntax, `[parent, parent] -> grandparent` (a chain of two `parent` fields collapses down to one `grandparent` field between the start and end nodes):
+
+```mermaid
+flowchart LR
+1(Me) -- parent --> 2(Mother)
+2 -- parent --> 3(Grandfather)
+1 -. grandparent .-> 3
+```
+:::
 
 In the settings for this relationship:
 

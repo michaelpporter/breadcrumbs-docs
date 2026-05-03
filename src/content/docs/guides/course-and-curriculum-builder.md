@@ -16,8 +16,9 @@ flowchart BT
 
 There are a few ways to build this structure. This guide uses [Dendron Notes](/explicit-edge-builders/dendron-notes/) (or [Regex Notes](/explicit-edge-builders/regex-notes/) as an alternative) to derive the Course → Module → Lesson hierarchy automatically from your note names. [List Notes](/explicit-edge-builders/list-notes/) in each module then add an ordered `next` sequence between lessons. A [codeblock tree](/views/codeblocks/) in the top-level Course note renders the full curriculum, and the [Previous-Next View](/views/previous-next-view/) gives learners a persistent navigation bar.
 
-> [!NOTE]
-> The `next` edges between lessons aren't shown in full in the Mermaid graph above, as it would clutter the layout. The core idea is: `up/down` fields for the Course → Module → Lesson hierarchy, and `next/prev` fields for moving through lessons in order.
+:::note[NOTE]
+The `next` edges between lessons aren't shown in full in the Mermaid graph above, as it would clutter the layout. The core idea is: `up/down` fields for the Course → Module → Lesson hierarchy, and `next/prev` fields for moving through lessons in order.
+:::
 
 ## Steps
 
@@ -51,8 +52,9 @@ Python.DataStructures.Dicts
 
 No frontmatter is needed at all for the hierarchy. Breadcrumbs reads the note names and infers the edges.
 
-> [!TIP]
-> Keep each segment short and use consistent casing. Breadcrumbs can display a trimmed version of the name (e.g. `Variables` instead of `Python.Basics.Variables`) — enable **Display Trimmed** in the Dendron settings.
+:::tip[TIP]
+Keep each segment short and use consistent casing. Breadcrumbs can display a trimmed version of the name (e.g. `Variables` instead of `Python.Basics.Variables`) — enable **Display Trimmed** in the Dendron settings.
+:::
 
 ### 3. Enable Dendron Notes
 
@@ -109,8 +111,9 @@ flowchart TB
 	L1 -- next-lesson --> L2 -- next-lesson --> L3
 ```
 
-> [!NOTE]
-> The module note now serves double duty: it's part of the Dendron hierarchy _and_ it's the List Note that defines lesson order. The two edge builders work independently and combine in the graph.
+:::note[NOTE]
+The module note now serves double duty: it's part of the Dendron hierarchy _and_ it's the List Note that defines lesson order. The two edge builders work independently and combine in the graph.
+:::
 
 Repeat this for every module in the course.
 
@@ -124,12 +127,13 @@ Open `Settings > Implied Relations > Transitive` and add:
 
 ![[transitive (next-lesson) <- prev-lesson.png]]
 
-> [!TIP]
-> You can [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) the rule:
->
-> ```
-> [next-lesson] <- prev-lesson
-> ```
+:::tip[TIP]
+You can [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) the rule:
+
+```
+[next-lesson] <- prev-lesson
+```
+:::
 
 After [rebuilding the graph](/commands/rebuild-graph/), every lesson will automatically have a `prev-lesson` edge pointing back, without you having to maintain it manually.
 
@@ -168,8 +172,9 @@ Go to `Settings > Views > Page > Previous/Next`:
 - **Left Field Group**: set to a group that contains `prev-lesson`
 - **Right Field Group**: set to a group that contains `next-lesson`
 
-> [!TIP]
-> If you don't have field groups set up yet, see [Field Groups](/field-groups/). Create a `course-nexts` group containing `next-lesson` and a `course-prevs` group containing `prev-lesson`, then assign these to the right and left sides of the view respectively.
+:::tip[TIP]
+If you don't have field groups set up yet, see [Field Groups](/field-groups/). Create a `course-nexts` group containing `next-lesson` and a `course-prevs` group containing `prev-lesson`, then assign these to the right and left sides of the view respectively.
+:::
 
 Once enabled, every lesson note will display something like this at the top:
 
@@ -195,8 +200,9 @@ graph LR
 
 Now a learner can press `Alt+Right` at the end of any lesson to jump straight to the next one — no mouse required.
 
-> [!TIP]
-> Assign hotkeys to _both_ directions so learners can move fluidly back and forth. The [Layered Daily Notes](../layered-daily-notes/) guide uses the same pattern for navigating between daily notes.
+:::tip[TIP]
+Assign hotkeys to _both_ directions so learners can move fluidly back and forth. The [Layered Daily Notes](../layered-daily-notes/) guide uses the same pattern for navigating between daily notes.
+:::
 
 ## Extras/Advanced Usage
 

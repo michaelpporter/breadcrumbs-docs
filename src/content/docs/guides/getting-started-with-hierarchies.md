@@ -27,10 +27,11 @@ Out of the box, Breadcrumbs ships with five default fields:
 
 These defaults are intentionally generic, and they're a great place to start. `up` and `down` alone are enough to build a complete topic hierarchy.
 
-> [!TIP]
-> **When to keep the defaults**: If your vault is primarily one type of content — notes, ideas, topics — the defaults work well. `up:: [[My MOC]]` is perfectly clear.
->
-> **When to rename them**: Once you have _multiple_ kinds of hierarchy in the same vault, more specific names prevent confusion. The [Layered Daily Notes](../layered-daily-notes/) guide uses `month` and `year` instead of plain `up`, so there's no ambiguity about which "up" is meant.
+:::tip[TIP]
+**When to keep the defaults**: If your vault is primarily one type of content — notes, ideas, topics — the defaults work well. `up:: [[My MOC]]` is perfectly clear.
+
+**When to rename them**: Once you have _multiple_ kinds of hierarchy in the same vault, more specific names prevent confusion. The [Layered Daily Notes](../layered-daily-notes/) guide uses `month` and `year` instead of plain `up`, so there's no ambiguity about which "up" is meant.
+:::
 
 You can view and edit your fields under `Settings > Edge Fields`.
 
@@ -65,8 +66,9 @@ up:: [[Music Genres]]
 
 Now do the same for `Classical` and `Electronic`. Each of the three child notes should have `up: "[[Music Genres]]"` in its frontmatter (or as a Dataview field).
 
-> [!INFO]
-> In the language of Breadcrumbs, you've just used the [typed-link edge builder](/explicit-edge-builders/typed-links/) to add three [explicit edges](/explicit-edge-builders/), each using the `up` [edge field](/edge-fields/).
+:::note[INFO]
+In the language of Breadcrumbs, you've just used the [typed-link edge builder](/explicit-edge-builders/typed-links/) to add three [explicit edges](/explicit-edge-builders/), each using the `up` [edge field](/edge-fields/).
+:::
 
 ### 4. Rebuild the Graph
 
@@ -74,8 +76,9 @@ Adding typed links to your notes doesn't automatically update what Breadcrumbs k
 
 Run the **Breadcrumbs: [Rebuild Graph](/commands/rebuild-graph/)** command (open the command palette with `Cmd/Ctrl+P` and search for "Rebuild Graph").
 
-> [!NOTE]
-> This is the most common first-time stumbling block. If you don't see your new edges in any view, [rebuilding the graph](/commands/rebuild-graph/) is almost always the fix.
+:::note[NOTE]
+This is the most common first-time stumbling block. If you don't see your new edges in any view, [rebuilding the graph](/commands/rebuild-graph/) is almost always the fix.
+:::
 
 ### 5. Open the Matrix View
 
@@ -85,15 +88,17 @@ You'll see the Matrix View appear in the sidebar. Under the `up` section, it sho
 
 Now switch to the `Music Genres` note. The Matrix View will flip to the perspective of that note, and under `down` you'll see all three child notes listed: `Jazz`, `Classical`, and `Electronic`.
 
-> [!TIP]
-> The `down` edges weren't added manually — Breadcrumbs infers them automatically as the opposite of the `up` edges you added. This is the [implied edges](/implied-edge-builders/) system at work.
+:::tip[TIP]
+The `down` edges weren't added manually — Breadcrumbs infers them automatically as the opposite of the `up` edges you added. This is the [implied edges](/implied-edge-builders/) system at work.
+:::
 
 ### 6. Open the Trail View
 
 The [Trail View](/views/trail-view/) appears at the top of each note and shows all paths going _up_ from the current note. Open any of the three child notes and you should see a trail leading back to `Music Genres`.
 
-> [!INFO]
-> The Trail View reads right-to-left. The right-most entry is the immediate neighbour of the current note; entries further left are further away in the hierarchy. It works like a file path in a file explorer.
+:::note[INFO]
+The Trail View reads right-to-left. The right-most entry is the immediate neighbour of the current note; entries further left are further away in the hierarchy. It works like a file path in a file explorer.
+:::
 
 Enable or disable the Trail View under `Settings > Views > Page > Trail > Enable`.
 

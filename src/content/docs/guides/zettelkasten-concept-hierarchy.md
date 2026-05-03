@@ -16,8 +16,9 @@ flowchart BT
 
 There are various ways this structure can be achieved. The method in this guide uses three custom [Edge Fields](/edge-fields/) (`topic`, `source`, and `related`) to wire notes together, [Tag Notes](/explicit-edge-builders/tag-notes/) to auto-populate MOC notes with every note that carries a matching concept tag, and a [breadcrumbs codeblock](/views/codeblocks/) inside each MOC to render the living tree.
 
-> [!NOTE]
-> The `related` edges aren't shown in the full Mermaid graph above because they run horizontally between peers. They're still part of the schema and are used when you want to surface lateral connections inside a codeblock or the [Matrix View](/views/matrix-view/).
+:::note[NOTE]
+The `related` edges aren't shown in the full Mermaid graph above because they run horizontally between peers. They're still part of the schema and are used when you want to surface lateral connections inside a codeblock or the [Matrix View](/views/matrix-view/).
+:::
 
 ## Steps
 
@@ -37,8 +38,9 @@ When you add each field, assign it to the appropriate [field group](/field-group
 | `source` | up | `ups` |
 | `related` | same | `same` |
 
-> [!TIP]
-> Keeping `topic` and `source` both in the `ups` group means views and codeblocks that target the `ups` group will surface both types of upward relationship without extra configuration.
+:::tip[TIP]
+Keeping `topic` and `source` both in the `ups` group means views and codeblocks that target the `ups` group will surface both types of upward relationship without extra configuration.
+:::
 
 ### 2. Add Fields to Your Concept Notes
 
@@ -98,11 +100,13 @@ graph TB
 
 Now any note tagged `#cryptography` is automatically a child of `Cryptography MOC` via the `topic` field. When you create a new concept note and add the tag, it appears in the tree the next time Breadcrumbs [rebuilds the graph](/commands/rebuild-graph/) — no manual linking needed.
 
-> [!NOTE]
-> By default, Breadcrumbs matches nested tags too: a note tagged `#cryptography/classical` will still be picked up by the `#cryptography` Tag Note. Add `BC-tag-note-exact: true` to the MOC frontmatter if you only want exact matches.
+:::note[NOTE]
+By default, Breadcrumbs matches nested tags too: a note tagged `#cryptography/classical` will still be picked up by the `#cryptography` Tag Note. Add `BC-tag-note-exact: true` to the MOC frontmatter if you only want exact matches.
+:::
 
-> [!TIP]
-> You can combine both approaches. Leave the `BC-tag-note` fields on the MOC for tag-driven membership, and still add explicit `topic` links in individual notes when you want to override or supplement the tag-based hierarchy.
+:::tip[TIP]
+You can combine both approaches. Leave the `BC-tag-note` fields on the MOC for tag-driven membership, and still add explicit `topic` links in individual notes when you want to override or supplement the tag-based hierarchy.
+:::
 
 ### 4. Add a Live Tree Codeblock to Each MOC
 
@@ -147,8 +151,9 @@ sort: basename asc
 
 Omitting `depth` entirely shows all depths, which is equivalent to `depth: [0]`.
 
-> [!TIP]
-> `depth: [0, 0]` is particularly useful in a top-level hub note (e.g. `Home.md`) where you want to list only the first-level MOCs without pulling in every leaf note underneath them.
+:::tip[TIP]
+`depth: [0, 0]` is particularly useful in a top-level hub note (e.g. `Home.md`) where you want to list only the first-level MOCs without pulling in every leaf note underneath them.
+:::
 
 ### 5. Use Field Groups in the Codeblock
 
@@ -185,8 +190,9 @@ An example result:
   - [[Vigenère Cipher]]
 ```
 
-> [!TIP]
-> The output format is compatible with [List Notes](/explicit-edge-builders/list-notes/), so you can paste it directly into a note and use it as a List Note edge source. This gives you a manually-curated fallback if you ever want to lock in a particular ordering.
+:::tip[TIP]
+The output format is compatible with [List Notes](/explicit-edge-builders/list-notes/), so you can paste it directly into a note and use it as a List Note edge source. This gives you a manually-curated fallback if you ever want to lock in a particular ordering.
+:::
 
 ## Extras/Advanced Usage
 
