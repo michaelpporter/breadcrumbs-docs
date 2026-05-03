@@ -34,7 +34,7 @@ And for Monthly Notes, add these fields:
 
 The end result should look like this:
 
-![Layered Daily Notes EdgeFieldSettings.png](images/layered-daily-notes-edgefieldsettings.png)
+![Layered Daily Notes EdgeFieldSettings.png](/images/layered-daily-notes-edgefieldsettings.png)
 
 ### 2. Daily Note Template
 
@@ -98,7 +98,7 @@ graph BT
 4. Enter your preferred date format (in [Luxon notation](https://moment.github.io/luxon/#/parsing?id=table-of-tokens))
 5. Optionally toggle "Stretch to Existing", depending on what behaviour you want if there are missing Daily Notes
 
-![Layered Daily Notes Date Note Settings.png](images/layered-daily-notes-date-note-settings.png)
+![Layered Daily Notes Date Note Settings.png](/images/layered-daily-notes-date-note-settings.png)
 
 Now edge of your Daily Notes should automatically point `tomorrow` to the following day's note.
 
@@ -115,15 +115,15 @@ To set this up, open `Settings > Implied Relations > Transitive`, and add the fo
 
 - `[month] <- days`
 
-![transitive (month) <- days.png](images/transitive-(month)-<--days.png)
+![transitive (month) <- days.png](/images/transitive-(month)-<--days.png)
 
 - `[tomorrow] <- yesterday`
 
-![transitive (tomorrow) <- yesterday.png](images/transitive-(tomorrow)-<--yesterday.png)
+![transitive (tomorrow) <- yesterday.png](/images/transitive-(tomorrow)-<--yesterday.png)
 
 - `[next-month] <- prev-month`
 
-![transitive (next-month) <- prev-month.png](images/transitive-(next-month)-<--prev-month.png)
+![transitive (next-month) <- prev-month.png](/images/transitive-(next-month)-<--prev-month.png)
 
 > [!TIP]
 > You can also [bulk-add](/implied-edge-builders/transitive-implied-relations/#bulk-add-rules) the rules:

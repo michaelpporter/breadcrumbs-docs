@@ -15,7 +15,7 @@ This category of [Implied Edge Builders](/implied-edge-builders/) can be thought
 
 In the settings for this relationship:
 
-![transitive (parent, parent) -> grandparent.png](images/transitive-(parent,-parent)-->-grandparent.png)
+![transitive (parent, parent) -> grandparent.png](/images/transitive-(parent,-parent)-->-grandparent.png)
 
 ## Options
 
@@ -123,4 +123,4 @@ graph LR
 
 You can also add transitive rules in bulk, using the syntax shown above (`[field-one, field-two] -> close-field`). To do so, scroll down to the bottom of the Transitive Implied Relations settings and open the "Bulk Add Rules" dropdown. Then, paste a new-line separated list of rules into the input area, and click "Bulk Add".
 
-![Bulk Add Transitive Rules.png](images/bulk-add-transitive-rules.png)
+![Bulk Add Transitive Rules.png](/images/bulk-add-transitive-rules.png)

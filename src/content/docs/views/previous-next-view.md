@@ -3,7 +3,7 @@ title: "Previous-Next View"
 ---
 The Previous-Next View shows the immediate `previous` and `next` neighbours of the current note.
 
-![view.page.prev-next.png](images/view.page.prev-next.png)
+![view.page.prev-next.png](/images/view.page.prev-next.png)
 
 A common use-case for this view is to see your Daily Notes for `yesterday` and `tomorrow` from the current note. See the [Layered Daily Notes](/guides/layered-daily-notes/) guide for more details on this example.
 

@@ -12,7 +12,7 @@ sort: basename asc
 
 This would render a markdown list of all paths pointing _down_ from the current note, up to a depth of 3, sorted by the basename of the notes, in ascending order.
 
-![view.codeblock.tree.png](images/view.codeblock.tree.png)
+![view.codeblock.tree.png](/images/view.codeblock.tree.png)
 
 ## Settings
 
@@ -36,7 +36,7 @@ How to visualise the results.
 - `mermaid` renders the results in a [Mermaid](https://mermaid.js.org) graph
 - `markmap` renders the results as an interactive [Markmap](https://markmap.js.org) mind map
 
-![Codeblock Mermaid Binary Tree.png](images/codeblock-mermaid-binary-tree.png)
+![Codeblock Mermaid Binary Tree.png](/images/codeblock-mermaid-binary-tree.png)
 
 ### `start-note`
 
@@ -296,4 +296,4 @@ show-attributes: [field]
 sort: field
 ```
 
-![Codeblock Matrix View.png](images/codeblock-matrix-view.png)
+![Codeblock Matrix View.png](/images/codeblock-matrix-view.png)

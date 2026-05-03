@@ -3,7 +3,7 @@ title: "Matrix View"
 ---
 The _Matrix View_ appears on the side of the editor, and shows the **immediate outgoing neighbours** of the current note, grouped by their [field](/edge-fields/).
 
-![Matrix View.png](images/matrix-view.png)
+![Matrix View.png](/images/matrix-view.png)
 
 On the right side of each link, you'll see an `x` or `i`, indicating if that edge is [explicit](/explicit-edge-builders/) or [implied](/implied-edge-builders/implied-edge-builders/). Hover over the icon to see the [source](/concepts/#edge-attributes) of real edges, and the [kind](/concepts/#edge-attributes) of implied edges (as well as the [round](/implied-edge-builders/implied-relation-rounds/) they were added in).
 
