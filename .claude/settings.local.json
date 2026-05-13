@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Read(//Users/michaelporter/.claude/agents/**)",
-      "Read(//Users/michaelporter/.claude/**)"
+      "Read(//Users/michaelporter/.claude/**)",
+      "Bash(gh api *)"
     ]
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
   }
 }

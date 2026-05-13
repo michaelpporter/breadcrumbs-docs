@@ -15,3 +15,4 @@ Various guides showing how to apply Breadcrumbs to different practical use-cases
 - [Course and Curriculum Builder](course-and-curriculum-builder)
 - [Reading the Mermaid Graph View](reading-the-mermaid-graph-view)
 - [Vault Maintenance and Graph Auditing](vault-maintenance-and-graph-auditing)
+- [Banners and Page Views](banners-and-page-views)
