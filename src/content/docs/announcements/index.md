@@ -4,6 +4,7 @@ description: Index of Breadcrumbs release announcements and changelog entries fr
 ---
 ## Announcements
 
+- [2026-05-16](announcement-2026-05-16)
 - [2026-05-01](announcement-2026-05-01)
 
 ## Past Announcements
