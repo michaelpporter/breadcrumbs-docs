@@ -9,4 +9,6 @@ This command rebuilds the [Breadcrumbs graph](/concepts/#graph). This is useful 
 Change under `Settings > Commands > Rebuild Graph`
 
 - **Notify on Rebuild**: Show a notification when the graph is rebuilt. The notification will show a summary of any errors that occurred during the rebuild.
-- **Triggers**: Choose to automatically run the command when you change notes, or when you save a note.
+- **Triggers**: Choose to automatically rebuild the graph:
+  - **On layout change**: when you switch notes or change the workspace layout.
+  - **On note save**: when a note's metadata changes after a save. Rebuilds are debounced (~1.5s) so rapid edits trigger a single rebuild.
