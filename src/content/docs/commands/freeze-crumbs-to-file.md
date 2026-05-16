@@ -1,5 +1,5 @@
 ---
-title: "Freeze Crumbs to File"
+title: "Freeze Implied Edges to Note"
 description: Command that converts all implied edges leaving the current note into explicit typed-link frontmatter or Dataview fields.
 ---
 This command takes all the [implied edges](/implied-edge-builders/) leaving the current note, and makes them explicit by writing them to the file in the format you choose.

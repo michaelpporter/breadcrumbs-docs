@@ -7,8 +7,11 @@ description: Overview of the command palette commands Breadcrumbs adds for navig
 Breadcrumbs adds a few commands to the command palette.
 
 - [Rebuild Graph](rebuild-graph/)
+- [Open View](open-views/)
 - [Jump to First Neighbour](jump-to-first-neighbour/)
-- [Freeze Crumbs to File](freeze-crumbs-to-file/)
+- [Freeze Implied Edges to Note](freeze-crumbs-to-file/)
+- [Freeze Implied Edges to Vault](freeze-implied-edges-to-vault/)
 - [Create List Index](create-list-index/)
 - [Threading](threading/)
-- [Graph Stats](graph-stats/)
+- [Show/Copy Graph Stats](graph-stats/)
+- [Toggle Sticky Page Views](toggle-sticky-page-views/)

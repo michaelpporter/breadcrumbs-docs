@@ -1,5 +1,5 @@
 ---
-title: "Graph Stats"
+title: "Show/Copy Graph Stats"
 description: Command that generates and copies summary statistics about your Breadcrumbs graph's nodes and edges.
 ---
 This command generates summary statistics of your Breadcrumbs graph. The output is copied to the clipboard, and printed to the console (using the `FEAT` [log level](/debugging/#log-levels)). The output summaries the counts of the various [node](/concepts/#node-attributes) and [edge](/concepts/#edge-attributes) attributes:
