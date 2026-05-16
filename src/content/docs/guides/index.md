@@ -16,3 +16,4 @@ Various guides showing how to apply Breadcrumbs to different practical use-cases
 - [Reading the Mermaid Graph View](reading-the-mermaid-graph-view)
 - [Vault Maintenance and Graph Auditing](vault-maintenance-and-graph-auditing)
 - [Banners and Page Views](banners-and-page-views)
+- [Installing Beta Releases](installing-beta-releases)
