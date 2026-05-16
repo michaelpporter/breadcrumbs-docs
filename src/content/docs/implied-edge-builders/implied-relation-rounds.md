@@ -7,6 +7,7 @@ By default, each of your [Transitive Implied Relations](../transitive-implied-re
 - Setting rounds to `0` disables the rule.
 - Setting it to `1` will run the rule once, only considering _explicit_ edges.
 - Setting it to `2` will run the rule again, considering _explicit_ edges and _previously added_ implied edges.
+- The maximum is `10`. New rules you add default to this max; the five built-in rules ship at `1`.
 
 :::tip[TIP]
 You can think of increasing the rounds as making all _previous_ implied relations **explicit**.

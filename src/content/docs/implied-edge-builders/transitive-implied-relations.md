@@ -29,6 +29,7 @@ In the settings for this relationship:
   - `false` (or unchecked) in this example, because it closes from start to finish
 - **Rounds**: How many [rounds](../implied-relation-rounds/) to run the rule for
   - `1` in this example
+  - Capped at `10`. New rules default to the max (`10`); the five built-in rules ship at `1`.
 - **Name (optional)**: Give a label to the rule. By default, the `[field] -> close` syntax will be used.
 
 ## Examples

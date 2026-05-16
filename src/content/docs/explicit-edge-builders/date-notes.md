@@ -16,8 +16,8 @@ Under the hood, Breadcrumbs takes the date of the current note and _adds one day
 ## Settings
 
 - **Enable**: Toggle Date Notes on or off
-- **Field**: Choose the [field](/edge-fields/) to use for the edges
-- **Date Format**: Choose the date format you use for your daily notes (e.g. `YYYY-MM-DD`)
+- **Default Field**: Choose the [field](/edge-fields/) to use for the edges
+- **Date Format**: Choose the date format you use for your daily notes (e.g. `yyyy-MM-dd`)
 	- Refer to the [Luxon documentation](https://moment.github.io/luxon/#/parsing?id=table-of-tokens) for the full list of date formats
 - **Stretch to Existing**: If there is a gap from one day to another, should the next note be the unresolved one in _one day_ or should it "stretch" to the next resolved (existing) note?
 

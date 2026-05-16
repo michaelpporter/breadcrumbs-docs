@@ -22,6 +22,7 @@ Breadcrumbs always looks for the note "upwards" of the previous, so pick a field
 ## Settings
 
 - **Enable**: Toggle Dendron notes on or off.
-- **Field**: Choose the [field](/edge-fields/) to use for the edges.
+- **Default Field**: Choose the [field](/edge-fields/) to use for the edges. Override per-note with the `BC-dendron-note-field` frontmatter key.
+- **Default Sibling Field**: Choose the [field](/edge-fields/) used for edges between Dendron notes at the same hierarchy level (e.g. `A.B` ↔ `A.C`). Leave empty to disable sibling edges.
 - **Delimiter**: Choose the delimiter you use in your Dendron notes. This is generally a period (`.`), but can be anything you like.
 - **Display Trimmed**: Choose to display the trimmed note name. This will remove the prefix from the note name, so `A.B.C` will be displayed as `C`.

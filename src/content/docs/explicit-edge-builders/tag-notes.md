@@ -43,3 +43,20 @@ BC-tag-note-tag: "#markdown"
 ```
 
 If you don't add this field, Breadcrumbs will add edges to all notes that _contain_ the tag. e.g. `#markdown/links` contains `#markdown`.
+
+## `BC-tag-note-sibling-field`
+
+To also add edges _between_ the tagged notes (treating them as siblings), add the `BC-tag-note-sibling-field` field, set to one of your [edge fields](/edge-fields/).
+
+```yaml
+---
+BC-tag-note-tag: "#markdown"
+BC-tag-note-field: "down"
+BC-tag-note-sibling-field: "same"
+---
+```
+
+## Settings
+
+- **Default Field**: Fallback [field](/edge-fields/) used when a tag note omits `BC-tag-note-field`. When set, `BC-tag-note-field` is optional.
+- **Default Sibling Field**: Fallback [field](/edge-fields/) used when a tag note omits `BC-tag-note-sibling-field`. Leave empty to disable sibling edges by default.
