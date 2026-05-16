@@ -10,5 +10,5 @@ This only applies to [Dataview typed-links](/explicit-edge-builders/typed-links/
 
 ## Settings
 
-- **Enable**: Enable the suggestor. Obsidian needs to be restarted after enabling.
-- **Trigger**: The character(s) that triggers the suggestor. Defaults to "`.`" (a period).
+- **Enabled**: Enable the suggestor. Obsidian needs to be restarted after enabling.
+- **Trigger String**: The character(s) that triggers the suggestor, entered at the start of a line. Defaults to "`.`" (a period).
