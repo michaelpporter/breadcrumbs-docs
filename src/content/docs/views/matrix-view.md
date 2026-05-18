@@ -21,3 +21,7 @@ Change under `Settings > Views > Matrix`:
 - **Lock View**: Lock the matrix view to a specific file, so it doesn't change as you navigate
 - **Lock Path**: The file path to lock the matrix view to (overrides the current note)
 - **Note Display Options**: Three toggles — **Folder**, **Extension**, and **Alias** — that control how note links are displayed in the matrix
+
+## Search
+
+A fuzzy search input in the Matrix View toolbar filters displayed notes by title. Fields with no matching notes are hidden. Click the search icon in the toolbar to toggle it.

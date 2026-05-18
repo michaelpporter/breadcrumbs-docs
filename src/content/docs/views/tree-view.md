@@ -20,3 +20,7 @@ Change under `Settings > Views > Tree`
 - **Find Root**: When enabled, the tree always starts from the root of the hierarchy (walking up via the configured field groups), rather than from the current note
 - **Find Root Field Groups**: The [field groups](/field-groups/) used to walk up to the root when **Find Root** is enabled. Defaults to `ups`
 - **Note Display Options**: Three toggles — **Folder**, **Extension**, and **Alias** — that control how note links are displayed in the tree
+
+## Search
+
+A fuzzy search input in the Tree View toolbar filters displayed notes by title. Ancestors of matching nodes remain visible so the hierarchy context is preserved. Click the search icon in the toolbar to toggle it.
