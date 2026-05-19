@@ -284,6 +284,10 @@ Use `mermaid-arrow: true` when sharing a graph with someone unfamiliar with your
 
 _Example_: `mermaid-arrow: true`
 
+:::note[PER-FIELD OVERRIDE]
+Individual edge fields can also be assigned a fixed arrow shape in `Settings → Edge Fields`. A per-field shape takes priority over the default logic for that field's edges, regardless of this `mermaid-arrow` setting. See [Edge Fields → Mermaid Arrow Style](/edge-fields/#mermaid-arrow-style).
+:::
+
 ## Examples
 
 ### Simulate the Matrix View
