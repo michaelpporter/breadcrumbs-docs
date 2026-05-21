@@ -7,6 +7,7 @@ description: Index of Breadcrumbs release announcements and changelog entries fr
 - [2026-05-20 — v4.11.2–4.11.3](announcement-2026-05-20-v4.11.2)
 - [2026-05-20 — v4.11.1](announcement-2026-05-20-v4.11.1)
 - [2026-05-18 — v4.11.0](announcement-2026-05-18-v4.11)
+- [2026-05-18 — v4.10.1–4.10.2](announcement-2026-05-18-v4.10.1)
 - [2026-05-18 — v4.10.0](announcement-2026-05-18)
 - [2026-05-16](announcement-2026-05-16)
 - [2026-05-01](announcement-2026-05-01)
