@@ -24,7 +24,7 @@ BRAT is a community plugin that installs and updates beta plugins from GitHub.
 2. Enter the Breadcrumbs repository:
 
    ```
-   SkepticMystic/breadcrumbs
+   michaelpporter/breadcrumbs
    ```
 
 3. Choose which version to track:
@@ -50,4 +50,4 @@ When you want to go back to the store version:
 
 ## Reporting issues
 
-Found a bug in a beta? Report it on the [Breadcrumbs issue tracker](https://github.com/SkepticMystic/breadcrumbs/issues). Include the plugin version (shown in **Settings → BRAT**) and steps to reproduce. See the [Debugging](/debugging/) page for collecting logs.
+Found a bug in a beta? Report it on the [Breadcrumbs issue tracker](https://github.com/michaelpporter/breadcrumbs/issues). Include the plugin version (shown in **Settings → BRAT**) and steps to reproduce. See the [Debugging](/debugging/) page for collecting logs.

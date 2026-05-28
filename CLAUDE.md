@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Astro + Starlight documentation site for the [Breadcrumbs Obsidian plugin](https://github.com/SkepticMystic/breadcrumbs). Content is authored in Obsidian via Vault CMS and published by pushing to git.
+Astro + Starlight documentation site for the [Breadcrumbs Obsidian plugin](https://github.com/michaelpporter/breadcrumbs). Content is authored in Obsidian via Vault CMS and published by pushing to git.
 
 ## Commands
 

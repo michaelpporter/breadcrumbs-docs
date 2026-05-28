@@ -13,7 +13,7 @@ description: V4 beta update covering advanced sorting, markdown link detection, 
 - Debugging log levels have been re-implemented 🔇
 - The Threading command has been re-implemented 🧵
 
-The README currently serves as the full documentation, so detailed info about the above is available there: https://github.com/SkepticMystic/breadcrumbs. As always, let me know if you've got any questions in <#929513881041248266>. Thank you to everyone who helped suggest/test these new changes 💚
+The README currently serves as the full documentation, so detailed info about the above is available there: https://github.com/michaelpporter/breadcrumbs. As always, let me know if you've got any questions in <#929513881041248266>. Thank you to everyone who helped suggest/test these new changes 💚
 
 ---
 

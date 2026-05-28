@@ -12,7 +12,7 @@ description: V4 beta update adding the field suggester, BC metadata auto-complet
 - Mermaid codeblocks! These work exactly like the default `type: tree` codeblocks, except they render the nested-list as a [Mermaid](<https://mermaid.js.org/> "Mermaid
 (<https://mermaid.js.org/>)") graph (image attached) 🧜✨
 
-These updates are currently only available in the V4 beta via the BRAT plugin. Let me know your thoughts, I'm always looking for feedback, especially as the beta gets closer to being stable! All changes are documented in the [README](https://github.com/SkepticMystic/breadcrumbs), if you've got any questions, please do ask in ⁠breadcrumbs. Thank you to everyone that helped suggest/test these changes 💚
+These updates are currently only available in the V4 beta via the BRAT plugin. Let me know your thoughts, I'm always looking for feedback, especially as the beta gets closer to being stable! All changes are documented in the [README](https://github.com/michaelpporter/breadcrumbs), if you've got any questions, please do ask in ⁠breadcrumbs. Thank you to everyone that helped suggest/test these changes 💚
 
 ![Binary Tree Mermaid Diagram.png](../images/binary-tree-mermaid-diagram.png)
 

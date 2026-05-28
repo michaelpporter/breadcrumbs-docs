@@ -5,7 +5,7 @@ description: How Breadcrumbs Page Views render alongside a banner image, and how
 
 Breadcrumbs Page Views — the [Trail View](/views/trail-view/) and [Previous-Next View](/views/previous-next-view/) — now coexist cleanly with banner plugins (such as Banners Reloaded). Earlier versions inserted Breadcrumbs' DOM at the same anchor point as the banner, causing one or the other to render incorrectly. The next release resolves that conflict and respects both the **Readable Line Width** and **Sticky** options when a banner is present.
 
-See the related fix in [SkepticMystic/breadcrumbs#687](https://github.com/SkepticMystic/breadcrumbs/issues/687).
+See the related fix in [michaelpporter/breadcrumbs#687](https://github.com/michaelpporter/breadcrumbs/issues/687).
 
 ## Readable Line Width on
 

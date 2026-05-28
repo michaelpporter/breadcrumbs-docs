@@ -1,6 +1,6 @@
 # breadcrumbs-docs
 
-Documentation site for the [Breadcrumbs Obsidian plugin](https://github.com/SkepticMystic/breadcrumbs), built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build).
+Documentation site for the [Breadcrumbs Obsidian plugin](https://github.com/michaelpporter/breadcrumbs), built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build).
 
 Content is authored in Obsidian via Vault CMS and published by pushing to git.
 

@@ -3,7 +3,7 @@ title: "README"
 ---
 ## Breadcrumbs Documentation
 
-This repo is an [Obsidian](https://obsidian.md) vault of notes which comprise the [documentation site](https://publish.obsidian.md/breadcrumbs-docs) for the [Breadcrumbs plugin](https://github.com/SkepticMystic/breadcrumbs).
+This repo is an [Obsidian](https://obsidian.md) vault of notes which comprise the [documentation site](https://publish.obsidian.md/breadcrumbs-docs) for the [Breadcrumbs plugin](https://github.com/michaelpporter/breadcrumbs).
 
 ## Contributing
 

@@ -8,7 +8,7 @@ description: Breadcrumbs 4.11.2 — Thread command crash fix. 4.11.3 — CI/rele
 
 **Bug Fixes**
 
-- **Thread command crashed without injecting edge** — `vault.create()` fires the `on:create` event synchronously before its promise resolves, so the new note's graph node was already registered by the time the thread command ran its batch update. The duplicate node registration threw an error, aborting the batch and preventing the breadcrumb link from being written to the source note's frontmatter. ([#696](https://github.com/SkepticMystic/breadcrumbs/issues/696))
+- **Thread command crashed without injecting edge** — `vault.create()` fires the `on:create` event synchronously before its promise resolves, so the new note's graph node was already registered by the time the thread command ran its batch update. The duplicate node registration threw an error, aborting the batch and preventing the breadcrumb link from being written to the source note's frontmatter. ([#696](https://github.com/michaelpporter/breadcrumbs/issues/696))
 
 **Housekeeping (4.11.3)**
 
