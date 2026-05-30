@@ -16,6 +16,11 @@ export default defineConfig({
 			sidebar: [
 						// Each item here is one entry in the navigation menu.
 				{ label: 'Home', slug: 'index' },
+				{
+					label: 'Announcements',
+					autogenerate: { directory: 'announcements' },
+					collapsed: true,
+				},
 				{ label: 'Edge Fields', slug: 'edge-fields' },
 				{ label: 'Field Groups', slug: 'field-groups' },
 				{
@@ -46,11 +51,6 @@ export default defineConfig({
 				{
 					label: 'Guides',
 					autogenerate: { directory: 'guides' },
-					collapsed: true,
-				},
-				{
-					label: 'Announcements',
-					autogenerate: { directory: 'announcements' },
 					collapsed: true,
 				},
 				{ label: 'Note Attributes', slug: 'note-attributes' },
