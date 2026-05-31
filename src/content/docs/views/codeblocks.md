@@ -37,7 +37,11 @@ How to visualise the results.
 - `mermaid` renders the results in a [Mermaid](https://mermaid.js.org) graph
 - `markmap` renders the results as an interactive [Markmap](https://markmap.js.org) mind map
 
+Markmap
+
 ![Codeblock Markmap](../images/codeblock-markmap.png)
+
+Mermaid Binary Tree
 
 ![Codeblock Mermaid Binary Tree.png](../images/codeblock-mermaid-binary-tree.png)
 
