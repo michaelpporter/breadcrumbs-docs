@@ -13,6 +13,17 @@ flowchart LR
 Under the hood, Breadcrumbs takes the date of the current note and _adds one day_ to it. So the field you choose should reflect the "next" nature of this builder (as opposed to pointing to the date _before_ the current one).
 :::
 
+## Quick Setup
+
+The **Set up…** button at the top of the Date Notes settings section opens a one-click configuration modal. It lets you choose which period levels to enable, whether to use period-specific edge fields (e.g. `next_week` / `prev_week` instead of the generic `next` / `prev`), and the week start day. On confirm it:
+
+- Enables the selected period levels
+- Creates any missing [edge fields](/edge-fields/) and adds them to the `nexts` / `prevs` field groups
+- Bumps the `up` / `down` transitive-rule rounds to 3 so the hierarchy chains automatically (daily → week → month → quarter → year)
+- Adds `next ↔ prev` reversal rules for each period-specific field
+
+The modal remembers your last choices.
+
 ## Settings
 
 - **Enable**: Toggle Date Notes on or off
@@ -20,6 +31,9 @@ Under the hood, Breadcrumbs takes the date of the current note and _adds one day
 - **Date Format**: Choose the date format you use for your daily notes (e.g. `yyyy-MM-dd`)
 	- Refer to the [Luxon documentation](https://moment.github.io/luxon/#/parsing?id=table-of-tokens) for the full list of date formats
 - **Stretch to Existing**: If there is a gap from one day to another, should the next note be the unresolved one in _one day_ or should it "stretch" to the next resolved (existing) note?
+- **Week Starts On**: Controls how daily notes map to week notes.
+  - **Monday (ISO)** — default; uses standard ISO week numbering (`kkkk-'W'WW`).
+  - **Sunday (US)** — shifts Sundays forward by one day before the ISO week lookup, so a Sunday is treated as the start of the _following_ week. Use this if your weekly notes follow US-style week numbering.
 
 ## Period Notes
 
