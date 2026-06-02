@@ -65,3 +65,14 @@ Available shapes:
 When two edges between the same pair of notes share the **same** custom arrow on both directions, they collapse into a single bidirectional line (e.g. `==>` becomes `<==>`). When they differ, each renders as a separate one-way line.
 
 Fields without a custom arrow keep the existing default behaviour (solid `-->` / dotted `-.->` based on explicit vs implied, with optional arrowheads via the [`mermaid-arrow`](/views/codeblocks/#mermaid-arrow) codeblock option).
+
+
+## Self
+
+The **Self** group at the bottom of the Edge Fields settings page controls the **self-is-sibling** implied relation. Fields listed here get an automatic self-loop implied edge for every note that participates in an edge of that type (as either source or target).
+
+In practice: if `same` is in the Self list, a note like _Blue_ — which has `same` connections to _Green_ and _Red_ — will also appear in its own same list in the Matrix and Tree views. This restores the classic Breadcrumbs behaviour from earlier versions.
+
+**Default:** `["same"]`
+
+To enable it for another field (e.g. a custom `sibling` field), click **Add Field** in the Self section and select it.
