@@ -24,7 +24,7 @@ down: "[[down of Projects Overview]]"
 
 Change under `Settings > Commands > Threading`
 
-- **Destination**: Choose where to write the edges to. Either as [frontmatter links](/explicit-edge-builders/typed-links/#frontmatter-links), [Dataview links](/explicit-edge-builders/typed-links/#dataview-links), or none
+- **Destination**: Choose where to write the edges to. Either as [frontmatter links](/explicit-edge-builders/typed-links/#frontmatter-links), [Dataview links](/explicit-edge-builders/typed-links/#inline-fields), or none
 - **Target Path Template**: Choose a template for the name (path) of the new note. This can include placeholders for:
 	- `{{source.folder}}`: The folder of the current note
 	- `{{source.path}}`: The path of the current note

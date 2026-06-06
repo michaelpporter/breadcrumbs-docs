@@ -58,7 +58,7 @@ up: "[[Music Genres]]"
 ---
 ```
 
-**Dataview inline field** (requires the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) plugin)
+**Inline field** ([Dataview](https://github.com/blacksmithgu/obsidian-dataview)-style syntax; no Dataview plugin required)
 
 ```md
 up:: [[Music Genres]]

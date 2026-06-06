@@ -33,4 +33,4 @@ graph
 
 ## Settings
 
-- **Destination**: Choose where to write the edges to. Either as [frontmatter links](/explicit-edge-builders/typed-links/#frontmatter-links) or [Dataview links](/explicit-edge-builders/typed-links/#dataview-links)
+- **Destination**: Choose where to write the edges to. Either as [frontmatter links](/explicit-edge-builders/typed-links/#frontmatter-links) or [Dataview links](/explicit-edge-builders/typed-links/#inline-fields)

@@ -179,7 +179,7 @@ _Example_: `flat: true`
 dataview-from?: string
 ```
 
-Filter edges by a [Dataview](http://blacksmithgu.github.io/obsidian-dataview/) query.
+Filter edges by a [Dataview](http://blacksmithgu.github.io/obsidian-dataview/)-style `FROM` query. The Dataview plugin is **not** required — Breadcrumbs parses the query natively (supports `#tag`, `"folder"`, `[[link]]`, and `AND` / `OR` / `NOT`).
 
 _Example_: `dataview-from: '#tag and !"Folder"'`
 

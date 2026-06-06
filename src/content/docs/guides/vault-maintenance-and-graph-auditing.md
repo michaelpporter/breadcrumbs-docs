@@ -98,7 +98,7 @@ dataview-from: '#area and !"Archive"'
 ````
 
 :::note[NOTE]
-The `dataview-from` filter requires the [Dataview plugin](http://blacksmithgu.github.io/obsidian-dataview/) to be installed and enabled. The query string follows Dataview's `FROM` syntax.
+The `dataview-from` query string follows [Dataview](http://blacksmithgu.github.io/obsidian-dataview/)'s `FROM` syntax, but Breadcrumbs parses it natively — the Dataview plugin is **not** required.
 :::
 
 This makes it practical to audit one section of the vault at a time — for example, checking that all your `Projects` notes have explicit `up` edges before archiving them.
@@ -117,7 +117,7 @@ To use the command:
 
 1. Open the note whose implied edges you want to freeze.
 2. Run `Ctrl/Cmd + P` → "Breadcrumbs: Freeze implied edges to note".
-3. Choose whether to write the edges as [frontmatter links](/explicit-edge-builders/typed-links/#frontmatter-links) or [Dataview inline fields](/explicit-edge-builders/typed-links/#dataview-links).
+3. Choose whether to write the edges as [frontmatter links](/explicit-edge-builders/typed-links/#frontmatter-links) or [Dataview inline fields](/explicit-edge-builders/typed-links/#inline-fields).
 
 Before freezing, the note might look like this (with a dashed implied edge):
 
