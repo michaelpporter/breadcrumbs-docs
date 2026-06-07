@@ -12,7 +12,11 @@ export default defineConfig({
     }),
 		starlight({
 			title: 'Breadcrumbs Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/michaelpporter/breadcrumbs-docs' }],
+			social: [{
+				icon: 'github', label: 'GitHub', href: 'https://github.com/michaelpporter/breadcrumbs'
+			}, {
+				icon: 'github', label: 'GitHub', href: 'https://github.com/michaelpporter/breadcrumbs-docs'
+			}],
 			sidebar: [
 						// Each item here is one entry in the navigation menu.
 				{ label: 'Home', slug: 'index' },
