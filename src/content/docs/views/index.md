@@ -1,6 +1,8 @@
 ---
 BC-folder-note-field: down
 title: Views
+sidebar:
+  order: 0
 description: Overview of the Breadcrumbs views that visualise your graph, including Tree, Matrix, Codeblocks, and Page Views.
 ---
 

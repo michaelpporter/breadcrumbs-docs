@@ -3,6 +3,8 @@ BC-folder-note-field: down
 aliases:
   - explicit
 title: Explicit Edge Builders
+sidebar:
+  order: 0
 description: Overview of the edge builders that add explicit typed edges to the Breadcrumbs graph from your vault structure.
 ---
 
