@@ -1,5 +1,7 @@
 ---
 title: "Tag Notes"
+sidebar:
+  order: 2
 description: Edge builder that adds edges from a note to all vault notes carrying a specified Obsidian tag.
 ---
 _Tag Notes_ allow you to leverage your existing tag structure. You can turn a note into a tag note by adding the following to your frontmatter:

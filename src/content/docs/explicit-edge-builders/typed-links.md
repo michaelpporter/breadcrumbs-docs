@@ -1,5 +1,7 @@
 ---
 title: "Typed Links"
+sidebar:
+  order: 1
 description: The most direct way to add edges by placing edge field keys and note links in YAML frontmatter or inline fields.
 ---
 _Typed links_ are the most basic, manual way to add edges to the graph. They can be added in two ways.

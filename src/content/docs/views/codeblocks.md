@@ -1,5 +1,7 @@
 ---
 title: "Codeblocks"
+sidebar:
+  order: 6
 description: Embed a live YAML-configured tree, Mermaid graph, or Markmap mind map of your Breadcrumbs graph directly in a note.
 ---
 Breadcrumbs adds a new codeblock language, `breadcrumbs`. Currently, this can be used to render a tree of all paths in a given direction from the current note (similar to the [Tree View](../tree-view/)), a [Mermaid](https://mermaid.js.org) graph, or a [Markmap](https://markmap.js.org) mind map of the same data. The codeblocks use **YAML**, for example:

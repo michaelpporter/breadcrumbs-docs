@@ -1,5 +1,7 @@
 ---
 title: "Dendron Notes"
+sidebar:
+  order: 4
 description: Edge builder that infers parent-child edges from dot-delimited Dendron-style note names like A.B.C.
 ---
 If you use the [Dendron](https://www.dendron.so/) note-taking system, Breadcrumbs can leverage the structure of your note names. For example, if you have the following notes:

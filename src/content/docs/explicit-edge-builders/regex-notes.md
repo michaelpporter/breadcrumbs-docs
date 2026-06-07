@@ -1,5 +1,7 @@
 ---
 title: "Regex Notes"
+sidebar:
+  order: 7
 description: Edge builder that adds edges from a note to all vault notes whose file paths match a given regular expression.
 ---
 _Regex Notes_ allow you to leverage your existing note name structure. You can turn a note into a regex note by adding the following to your frontmatter:

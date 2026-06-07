@@ -1,5 +1,7 @@
 ---
 title: "Traverse Notes"
+sidebar:
+  order: 8
 description: Edge builder that walks the Obsidian vault link graph (DFS) starting from an annotated note, generating one typed edge per parent→child hop.
 ---
 

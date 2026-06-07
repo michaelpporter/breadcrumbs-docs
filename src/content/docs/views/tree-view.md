@@ -1,5 +1,7 @@
 ---
 title: "Tree View"
+sidebar:
+  order: 5
 description: Side panel view that renders all graph paths from the current note as a nested collapsible tree.
 ---
 The Tree View appears on the side of the editor, and shows all paths with a chosen [field group](/field-groups/), starting from the current note. By default, it shows all paths going `down`. This image shows paths going either `up` or `down`:

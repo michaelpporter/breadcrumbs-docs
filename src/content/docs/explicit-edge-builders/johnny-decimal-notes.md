@@ -1,5 +1,7 @@
 ---
 title: "Johnny Decimal Notes"
+sidebar:
+  order: 5
 description: Edge builder that infers hierarchy edges from Johnny Decimal-style numbered note names like 10.20.a.
 ---
 If you use the [Johnny Decimal](https://johnnydecimal.com/) note-taking system, Breadcrumbs can leverage the structure of your note names. For example, if you have the following notes:

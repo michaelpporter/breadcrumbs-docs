@@ -1,5 +1,7 @@
 ---
 title: "Matrix View"
+sidebar:
+  order: 4
 description: Side panel view that shows the immediate outgoing neighbours of the current note grouped by edge field.
 ---
 The _Matrix View_ appears on the side of the editor, and shows the **immediate outgoing neighbours** of the current note, grouped by their [field](/edge-fields/).
