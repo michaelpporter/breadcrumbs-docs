@@ -2,6 +2,8 @@
 aliases:
   - implied
 title: Implied Edge Builders
+sidebar:
+  order: 0
 description: Rules that infer new graph edges from your existing explicit edges using transitive relationship chains.
 ---
 

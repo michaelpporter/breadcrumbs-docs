@@ -1,6 +1,8 @@
 ---
 BC-folder-note-field: down
 title: Commands
+sidebar:
+  order: 0
 description: Overview of the command palette commands Breadcrumbs adds for navigating, building, and managing your graph.
 ---
 

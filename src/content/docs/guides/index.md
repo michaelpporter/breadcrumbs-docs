@@ -1,5 +1,7 @@
 ---
 title: Guides
+sidebar:
+  order: 0
 description: Guides on using Breadcrumbs.
 
 ---

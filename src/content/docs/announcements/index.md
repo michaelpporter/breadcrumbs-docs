@@ -1,5 +1,7 @@
 ---
 title: "Announcements"
+sidebar:
+  order: 0
 description: Index of Breadcrumbs release announcements and changelog entries from the Discord community.
 ---
 ## Announcements
