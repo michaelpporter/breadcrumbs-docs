@@ -9,6 +9,10 @@ flowchart BT
 	C1(Jazz) & C2(Classical) & C3(Electronic) -->|up| P(Music Genres)
 ```
 
+:::caution[REQUIREMENTS]
+Breadcrumbs 4.15.0+ requires **Obsidian 1.13.0 or later**. On Obsidian 1.12, stay on Breadcrumbs 4.14.2 (maintained on the [`1.12-compat`](https://github.com/michaelpporter/breadcrumbs/tree/1.12-compat) branch).
+:::
+
 ## Steps
 
 ### 1. Understand Edge Fields
