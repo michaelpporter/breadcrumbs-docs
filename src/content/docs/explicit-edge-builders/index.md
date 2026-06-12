@@ -21,7 +21,7 @@ The different edge builders include:
 - [Regex Notes](regex-notes/)
 - [List Notes](list-notes/)
 - [Dendron Notes](dendron-notes/)
-- [Johnny Decimal Notes](johnny-decimal-notes/)
+- [Johnny.Decimal Notes](johnny-decimal-notes/)
 - [Dataview Notes](dataview-notes/)
 - [Date Notes](date-notes/)
 - [Folder Notes](folder-notes/)
