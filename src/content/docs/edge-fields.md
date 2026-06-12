@@ -50,7 +50,7 @@ The names are only labels — Breadcrumbs attaches no inherent meaning to them. 
 | `next` | following note in a sequence    |
 | `prev` | preceding note in a sequence    |
 
-The only behaviour Breadcrumbs ships with is the default implied reverse rules — `up`↔`down`, `next`↔`prev`, and `same`↔`same` (all configurable under [Implied Edge Builders](/implied-edge-builders/)). The parent/child/sibling _wording_ is just convention.
+The directional _wording_ (parent/child/sibling) is just convention. The structural behaviour Breadcrumbs ships with is the default implied reverse rules — `up`↔`down`, `next`↔`prev`, and `same`↔`same` (configurable under [Implied Edge Builders](/implied-edge-builders/)) — plus opt-in builders that populate these fields automatically, such as [Date Notes](/explicit-edge-builders/date-notes/), which links sequential date notes via `next`/`prev` and to their enclosing period (week/month/quarter/year) via `up`.
 
 ![Edge Field Settings.png](images/edge-field-settings.png)
 
