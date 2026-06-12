@@ -40,6 +40,18 @@ flowchart LR
 
 By default, there will be 5 starting fields: `up`, `same`, `down`, `next`, and `prev`, representing 5 different directions. These can take you quite far, and you may be happy using just these fields, but you can customise them further. To get started, you need to tell Breadcrumbs which other fields you intend to use to "type" your links. This can be done under `Settings > Edge Fields`:
 
+The names are only labels — Breadcrumbs attaches no inherent meaning to them. The table below shows how most people read the five defaults, but nothing is enforced: rename them, delete them, or add your own, and group them however you like (see [Field Groups](/field-groups/)).
+
+| Field  | Conventional reading            |
+| ------ | ------------------------------- |
+| `up`   | parent / broader note           |
+| `down` | child / narrower note           |
+| `same` | sibling                         |
+| `next` | following note in a sequence    |
+| `prev` | preceding note in a sequence    |
+
+The only behaviour Breadcrumbs ships with is the default implied reverse rules — `up`↔`down`, `next`↔`prev`, and `same`↔`same` (all configurable under [Implied Edge Builders](/implied-edge-builders/)). The parent/child/sibling _wording_ is just convention.
+
 ![Edge Field Settings.png](images/edge-field-settings.png)
 
 For example, you can [model personal relationships](/guides/personal-relationship-management/) using fields like `parent`, `child`, and `sibling`. Or you can create a [layered system of daily notes](/guides/layered-daily-notes/) using fields like `day`, `month`, and `year`.
