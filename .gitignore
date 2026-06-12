@@ -24,3 +24,6 @@ pnpm-debug.log*
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .ref/
+
+# Local triage / scratch notes (not for the repo)
+_notes/
