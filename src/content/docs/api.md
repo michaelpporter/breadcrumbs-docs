@@ -21,7 +21,7 @@ Returns the user's configured edge fields.
 window.BCAPI.fields; // EdgeField[]
 ```
 
-Each `EdgeField` has a single property: `label: string`.
+Each `EdgeField` has a required `label: string` and an optional `mermaid_arrow?: MermaidArrowType` used when rendering Mermaid diagrams.
 
 ### `field_groups`
 
