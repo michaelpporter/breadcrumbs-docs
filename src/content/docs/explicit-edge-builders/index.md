@@ -27,6 +27,21 @@ The different edge builders include:
 - [Folder Notes](folder-notes/)
 - [Traverse Notes](traverse-notes/)
 
+## Excluded folders
+
+A global **Excluded folders** setting (Settings → Breadcrumbs → Excluded folders) lets you skip whole folders when building edges. Notes inside a listed folder are ignored by **every** edge builder — they won't appear as a source or target of any explicit edge.
+
+Add one folder path per line, for example:
+
+```
+templates
+archive/old
+```
+
+A note is excluded if its path **equals** a listed folder or is **inside** it. Matching is on the folder boundary, so `arch` does _not_ exclude `archive`. Trailing slashes are ignored, and blank lines are skipped.
+
+This is useful for keeping template vaults, archives, or attachment folders out of the graph.
+
 ---
 
 next:: [Implied Edge Builders](/implied-edge-builders/)
