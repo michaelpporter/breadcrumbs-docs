@@ -53,6 +53,48 @@ flowchart LR
 	1(List Note) -- down --> 2(A) -- child --> 3(B)
 ```
 
+## `BC-list-note-section`
+
+By default, every list in the note is read. Set `BC-list-note-section` to a heading's text to scope the builder to **just that section** — only list items under that heading become edges.
+
+```yaml
+---
+BC-list-note-field: "down"
+BC-list-note-section: "Index"
+---
+```
+
+```md
+## Index
+
+- [[A]]
+- [[B]]
+
+## Notes
+
+- [[C]]
+```
+
+Only `A` and `B` become children — the list under `## Notes` is ignored. The section runs from its heading to the next heading of equal-or-higher level (or the end of the file), so nested sub-headings stay inside it. If no heading matches, no edges are added.
+
+## `BC-list-note-exclude`
+
+Keep a link in your list without turning it into a child. `BC-list-note-exclude` is a list of wiki-links to skip — useful for reference / see-also links.
+
+```yaml
+---
+BC-list-note-field: "down"
+BC-list-note-exclude:
+  - "[[Glossary]]"
+  - "[[See also]]"
+---
+
+- [[A]]
+- [[Glossary]]
+```
+
+`A` becomes a `down` child; `Glossary` stays in the list but gets no edge. Entries must be wiki-links (Breadcrumbs resolves them the same way Obsidian does).
+
 ## `BC-list-note-exclude-index`
 
 By default, the list note itself links to the top-level list items. You can exclude this behaviour by adding the `BC-list-note-exclude-index` field to the frontmatter of the list note.
