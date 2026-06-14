@@ -79,6 +79,15 @@ When two edges between the same pair of notes share the **same** custom arrow on
 Fields without a custom arrow keep the existing default behaviour (solid `-->` / dotted `-.->` based on explicit vs implied, with optional arrowheads via the [`mermaid-arrow`](/views/codeblocks/#mermaid-arrow) codeblock option).
 
 
+## Hide in views
+
+Each edge field has a **Hide in views** checkbox in `Settings → Edge Fields`, next to the field label. When checked, the field is kept everywhere it normally lives — its [field groups](/field-groups/), the graph, and [codeblocks](/views/codeblocks/) — but is no longer rendered in the **Matrix** and **Tree** side views.
+
+This is handy for structural fields you rely on for traversal but don't want cluttering the side panels. Unchecking it restores the field to those views immediately.
+
+The toggle affects only the Matrix and Tree side panels. Codeblocks still show the field (they take an explicit field list), and the Trail / Previous-Next page views are unaffected.
+
+
 ## Self
 
 The **Self** group at the bottom of the Edge Fields settings page controls the **self-is-sibling** implied relation. Fields listed here get an automatic self-loop implied edge for every note that participates in an edge of that type (as either source or target).
