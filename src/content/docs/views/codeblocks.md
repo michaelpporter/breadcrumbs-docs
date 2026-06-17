@@ -4,7 +4,7 @@ sidebar:
   order: 6
 description: Embed a live YAML-configured tree, Mermaid graph, or Markmap mind map of your Breadcrumbs graph directly in a note.
 ---
-Breadcrumbs adds a new codeblock language, `breadcrumbs`. Currently, this can be used to render a tree of all paths in a given direction from the current note (similar to the [Tree View](../tree-view/)), a [Mermaid](https://mermaid.js.org) graph, or a [Markmap](https://markmap.js.org) mind map of the same data. The codeblocks use **YAML**, for example:
+Breadcrumbs adds a new codeblock language, `breadcrumbs`. Currently, this can be used to render a tree of all paths in a given direction from the current note (similar to the [Tree View](../tree-view/)), a [Mermaid](https://mermaid.js.org) graph, a [Markmap](https://markmap.js.org) mind map of the same data, or a whole-vault [graph](#type). The codeblocks use **YAML**, for example:
 
 ```yaml
 type: tree
@@ -30,7 +30,7 @@ The following fields can be added to the codeblock to customise the output. Belo
 ### `type`
 
 ```ts
-type?: (tree) | mermaid | markmap
+type?: (tree) | mermaid | markmap | graph
 ```
 
 How to visualise the results.
@@ -38,6 +38,7 @@ How to visualise the results.
 - `tree` is similar to the [Tree View](../tree-view/)
 - `mermaid` renders the results in a [Mermaid](https://mermaid.js.org) graph
 - `markmap` renders the results as an interactive [Markmap](https://markmap.js.org) mind map
+- `graph` renders the **whole vault** (or a [`from`](#from)-scoped subset) as a single Mermaid graph, instead of traversing out from the current note. Useful for an overview/MOC or seeing a folder or tag's structure at a glance.
 
 Mermaid Binary Tree
 
@@ -150,21 +151,6 @@ If `type: tree`, and `collapse: true`, all nested lists will be collapsed/folded
 
 _Example_: `collapse: true`
 
-### `content`
-
-```ts
-content?: open | closed
-```
-
-Controls whether the items in the codeblock result are rendered in an open or closed [HTML `<details>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details), allowing the whole block to be collapsed by the reader.
-
-- `open`: The block is expandable, and starts expanded
-- `closed`: The block is expandable, and starts collapsed
-
-If omitted, no `<details>` wrapper is used and the content is always visible.
-
-_Example_: `content: closed`
-
 ### `flat`
 
 ```ts
@@ -175,15 +161,29 @@ Flatten the tree results into a un-nested list.
 
 _Example_: `flat: true`
 
-### `dataview-from`
+### `from`
 
 ```ts
-dataview-from?: string
+from?: string
 ```
 
-Filter edges by a [Dataview](http://blacksmithgu.github.io/obsidian-dataview/)-style `FROM` query. The Dataview plugin is **not** required — Breadcrumbs parses the query natively (supports `#tag`, `"folder"`, `[[link]]`, and `AND` / `OR` / `NOT`).
+Scope the codeblock to a set of notes using a `FROM`-style query. The [Dataview](http://blacksmithgu.github.io/obsidian-dataview/) plugin is **not** required — Breadcrumbs parses the query natively (supports `#tag`, `"folder"`, `[[link]]`, and `AND` / `OR` / `NOT`). For `type: graph`, this is the entry set of the graph; for other types it filters the traversal.
 
-_Example_: `dataview-from: '#tag and !"Folder"'`
+_Example_: `from: '#tag and !"Folder"'`
+
+:::note[RENAMED]
+This field was previously called `dataview-from` (a misleading name — it never used the Dataview API). The old name still works as a deprecated alias and logs a console warning; switch to `from`.
+:::
+
+### `exclude-folders`
+
+```ts
+exclude-folders?: string[]
+```
+
+Drop notes in the listed folders from the graph. **Additive** to the global [Excluded folders](/concepts/) setting — use it to hide extra folders for one codeblock without changing your vault-wide config. Currently applied by `type: graph`.
+
+_Example_: `exclude-folders: ["Templates", "Archive"]`
 
 ### `show-attributes`
 
@@ -194,16 +194,6 @@ show-attributes?: EdgeAttribute[]
 Show specific [edge attributes](/concepts/#edge-attributes) about each item in the result. By default, none are shown.
 
 _Example_: `show-attributes: [field, source]`
-
-### `field-prefix`
-
-```ts
-field-prefix?: true | (false)
-```
-
-When `show-attributes` includes `field`, prefix each item with the name of its [edge field](/edge-fields/) rather than showing the field as a separate attribute column.
-
-_Example_: `field-prefix: true`
 
 ### `sort`
 
@@ -313,3 +303,23 @@ sort: field
 ```
 
 ![Codeblock Matrix View.png](../images/codeblock-matrix-view.png)
+
+### Whole-vault graph
+
+Render the entire graph (no current-note root), filtered to one field, excluding a couple of folders:
+
+```yaml
+type: graph
+fields: [up]
+exclude-folders: ["Templates", "Archive"]
+title: Vault overview
+```
+
+Or scope it to a folder with `from`:
+
+```yaml
+type: graph
+from: '"Projects"'
+fields: [down]
+depth: [3]
+```

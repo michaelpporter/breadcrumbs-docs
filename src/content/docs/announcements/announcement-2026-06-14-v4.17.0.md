@@ -8,7 +8,7 @@ description: Breadcrumbs 4.17.0 — a per-field "Hide in views" toggle, plus a f
 
 **Hide a field from the side views**
 
-Each edge field now has a **Hide in views** checkbox in `Settings → Edge Fields`, next to the field label. Check it and that field is kept in its field groups, the graph, and your codeblocks — but no longer rendered in the **Matrix** and **Tree** side panels. Useful for structural fields you traverse on but don't want cluttering the views. Uncheck to bring it back. See [Edge Fields](/edge-fields/#hide-in-views).
+Each edge field now has a **Hide in views** checkbox in `Settings → Edge Fields`, next to the field label. Check it and that field is kept in its field groups, the graph, and your codeblocks — but no longer rendered in the **Matrix** and **Tree** side panels. Useful for structural fields you traverse on but don't want cluttering the views. Uncheck to bring it back. See [Edge Fields](/edge-fields/#hide-in-side-views).
 
 **Cleaner field removal**
 

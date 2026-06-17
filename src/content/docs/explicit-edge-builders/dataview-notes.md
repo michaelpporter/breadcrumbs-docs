@@ -15,6 +15,10 @@ BC-dataview-note-field: "<field>"
 
 Where `<query>` is a valid Dataview query, and `<field>` is one of your [edge fields](/edge-fields/).
 
+:::note[DEFAULT FIELD]
+`BC-dataview-note-field` is optional. If you omit it, Breadcrumbs uses the **default field** configured in `Settings → Edge sources → Dataview notes`. Set the field per-note only when you want to override that default.
+:::
+
 Breadcrumbs will ask Dataview for all notes that match the query, and add edges from the current note to those notes using the field you specify. For example, the following query will add `child` edges from the current note to all notes that contain the tag `#tag` and are in the folder "Folder":
 
 ```yaml
