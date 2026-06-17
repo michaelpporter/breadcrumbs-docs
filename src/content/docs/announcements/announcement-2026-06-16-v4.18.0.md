@@ -1,30 +1,10 @@
 ---
 title: "Announcement 2026-06-16 — v4.18.0"
-description: Breadcrumbs 4.18.0 — a whole-vault graph codeblock, per-codeblock folder exclusion, and a clearer codeblock field name.
+description: Breadcrumbs 4.18.0 — a clearer codeblock field name and a Dataview Notes default field.
 ---
 ## Breadcrumbs 🍞
 
 **4.18.0** released today.
-
-**Whole-vault graph codeblock**
-
-A new codeblock `type: graph` renders the **whole vault** as a single [Mermaid](https://mermaid.js.org) graph, instead of traversing out from the current note. Scope it to a folder or tag with [`from`](/views/codeblocks/#from), or leave it open for a full overview/MOC.
-
-```yaml
-type: graph
-fields: [up]
-title: Vault overview
-```
-
-**Exclude folders per codeblock**
-
-`type: graph` accepts an `exclude-folders` list that drops folders from the graph. It's **additive** to the global Excluded folders setting, so you can hide extra folders for a single codeblock without touching your vault-wide config.
-
-```yaml
-type: graph
-fields: [up]
-exclude-folders: ["Templates", "Archive"]
-```
 
 **`dataview-from` is now `from`**
 
