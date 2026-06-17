@@ -172,7 +172,7 @@ Scope the codeblock to a set of notes using a `FROM`-style query. The [Dataview]
 _Example_: `from: '#tag and !"Folder"'`
 
 :::note[RENAMED]
-This field was previously called `dataview-from` (a misleading name — it never used the Dataview API). The old name still works as a deprecated alias and logs a console warning; switch to `from`.
+This field was previously called `dataview-from`. That name is now misleading — the Dataview dependency was removed, and Breadcrumbs parses the query itself. The old name still works as a deprecated alias and logs a console warning; switch to `from`.
 :::
 
 ### `exclude-folders`

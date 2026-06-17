@@ -28,7 +28,7 @@ exclude-folders: ["Templates", "Archive"]
 
 **`dataview-from` is now `from`**
 
-The codeblock `dataview-from` field is renamed to [`from`](/views/codeblocks/#from). The old name was misleading — it never used the Dataview API; Breadcrumbs parses the `#tag` / `"folder"` / `[[link]]` query itself. The old `dataview-from` still works as a deprecated alias (with a console warning) — switch to `from` when convenient.
+The codeblock `dataview-from` field is renamed to [`from`](/views/codeblocks/#from). The old name is now misleading — the Dataview dependency was removed, and Breadcrumbs parses the `#tag` / `"folder"` / `[[link]]` query itself. The old `dataview-from` still works as a deprecated alias (with a console warning) — switch to `from` when convenient.
 
 **Dataview Notes default field**
 
