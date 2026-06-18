@@ -14,6 +14,7 @@ Breadcrumbs adds a few commands to the command palette.
 - [Freeze Implied Edges to Note](freeze-crumbs-to-file/)
 - [Freeze Implied Edges to Vault](freeze-implied-edges-to-vault/)
 - [Create List Index](create-list-index/)
+- [Export to Canvas](export-to-canvas/)
 - [Threading](threading/)
 - [Show/Copy Graph Stats](graph-stats/)
 - [Toggle Sticky Page Views](toggle-sticky-page-views/)

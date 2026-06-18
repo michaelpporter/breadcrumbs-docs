@@ -21,5 +21,5 @@ graph RL
 
 - **Enable**: Toggle Johnny.Decimal notes on or off.
 - **Default Field**: Choose the [field](/edge-fields/) to use for the edges. Override per-note with the `BC-johnny-decimal-note-field` frontmatter key.
-- **Default Sibling Field**: Choose the [field](/edge-fields/) used for edges between notes at the same level (e.g. `10.20` ↔ `10.30`). Leave empty to disable sibling edges.
+- **Default Sibling Field**: Choose the [field](/edge-fields/) used for edges between notes that share a parent — both items (`10.20` ↔ `10.30`) and categories under the same area (`11` ↔ `12` under `10`). Leave empty to disable sibling edges.
 - **Delimiter**: Choose the delimiter you use in your Johnny.Decimal notes. This is generally a period (`.`), but can be anything you like.
