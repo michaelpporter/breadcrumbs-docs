@@ -13,7 +13,11 @@ BC-dataview-note-field: "<field>"
 ---
 ```
 
-Where `<query>` is a valid Dataview query, and `<field>` is one of your [edge fields](/edge-fields/).
+Where `<query>` is a valid Dataview source, and `<field>` is one of your [edge fields](/edge-fields/).
+
+:::caution[SOURCE, NOT A FULL QUERY]
+Despite the field name, the value is a Dataview **source** — the part that goes after `FROM` (e.g. `"Folder"`, `#tag`, `[[Note]]`, or boolean combinations like `'"#tag" AND "Folder"'`). It is **not** a full DQL statement: don't write `LIST FROM …` or `TABLE … WHERE …`. The value is passed straight to Dataview's `pages()` method.
+:::
 
 :::note[DEFAULT FIELD]
 `BC-dataview-note-field` is optional. If you omit it, Breadcrumbs uses the **default field** configured in `Settings → Edge sources → Dataview notes`. Set the field per-note only when you want to override that default.
