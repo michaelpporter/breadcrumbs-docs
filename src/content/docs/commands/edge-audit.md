@@ -43,3 +43,4 @@ An example report:
 ## Settings
 
 - **Report file path**: Where the report is written, relative to the vault root. Defaults to `Breadcrumbs Edge Audit.md`. The report note excludes itself from the orphan list, so it won't flag itself on the next run.
+- **Ignore paths**: Folders or note paths to leave out of the report — one per line. A note is ignored if its path equals, or is inside, a listed path (folder semantics), so `Templates` covers everything under that folder. Ignored notes drop out of the **whole** report: not just orphans, but their dangling edges and the field checks too. This is report-only — it doesn't change your graph. To stop notes from producing edges at all, use the global [Excluded folders](/explicit-edge-builders/#excluded-folders) setting instead.
