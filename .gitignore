@@ -27,3 +27,6 @@ pnpm-debug.log*
 
 # Local triage / scratch notes (not for the repo)
 _notes/
+
+# Local Claude agent definitions (not for the repo)
+.claude/agents/
