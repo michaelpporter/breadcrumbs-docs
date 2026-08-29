@@ -5,6 +5,7 @@ import mermaid from 'astro-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://breadcrumbs-docs.michaelpporter.com',
 	integrations: [
     mermaid({
       theme: 'forest',
@@ -22,40 +23,40 @@ export default defineConfig({
 				{ label: 'Home', slug: 'index' },
 				{
 					label: 'Announcements',
-					autogenerate: { directory: 'announcements' },
 					collapsed: true,
+					items: [{ autogenerate: { directory: 'announcements' } }],
 				},
 				{ label: 'Edge Fields', slug: 'edge-fields' },
 				{ label: 'Field Groups', slug: 'field-groups' },
 				{
 					label: 'Explicit Edge Builders',
-					autogenerate: { directory: 'explicit-edge-builders' },
 					collapsed: true,
+					items: [{ autogenerate: { directory: 'explicit-edge-builders' } }],
 				},
 				{
 					label: 'Implied Edge Builders',
-					autogenerate: { directory: 'implied-edge-builders' },
 					collapsed: true,
+					items: [{ autogenerate: { directory: 'implied-edge-builders' } }],
 				},
 				{
 					label: 'Views',
-					autogenerate: { directory: 'views' },
 					collapsed: true,
+					items: [{ autogenerate: { directory: 'views' } }],
 				},
 				{
 					label: 'Commands',
-					autogenerate: { directory: 'commands' },
 					collapsed: true,
+					items: [{ autogenerate: { directory: 'commands' } }],
 				},
 				{
 					label: 'Suggesters',
-					autogenerate: { directory: 'suggesters' },
 					collapsed: true,
+					items: [{ autogenerate: { directory: 'suggesters' } }],
 				},
 				{
 					label: 'Guides',
-					autogenerate: { directory: 'guides' },
 					collapsed: true,
+					items: [{ autogenerate: { directory: 'guides' } }],
 				},
 				{ label: 'Note Attributes', slug: 'note-attributes' },
 				{ label: 'API', slug: 'api' },
