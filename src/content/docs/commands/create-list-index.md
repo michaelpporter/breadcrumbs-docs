@@ -21,7 +21,7 @@ The output format matches the required format for the [List Notes](/explicit-edg
 
 ## Settings
 
-- **Field Groups**: Which [field groups](/field-groups/) to include in the [traversal](/concepts/#traversal)
+- **Field Groups**: Which [field groups](/field-groups/) to include in the [traversal](/concepts/#traversal). The fields are read from the selected groups each time you build the index, so a field you add to a group later is included automatically.
 - **Edge Sorter**: How to order the results
 - **Show Attributes**: Which [edge attributes](/concepts/#edge-attributes) to show
 - **Indent**: Choose the string to use for indentation in the list (e.g. "` `", "`\t`")
